@@ -1,0 +1,77 @@
+{
+	"discussion_1":{
+		
+
+
+	},
+
+	"start":{
+		"content"	:	"Salut, tu es chez toi?",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"nextElement":	"startANS"
+	},
+	"startANS":{
+		"content"	:	"Ouais",
+		"discussion": 	"discussion_1",
+		"type"		: 	"1",
+		"choices":{ ":)"	: "lvl_A",
+					":(" 	: "lvl_B"}
+	},
+
+	"lvl_A":{
+		"content"	:	"Alors comment ça c'est passé?",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"nextElement":	"lvl_AANS"
+	},
+	"lvl_AANS":{
+		"content"	:	"Tranquil",
+		"discussion": 	"discussion_1",
+		"type"		: 	"1",
+		"choices":{ "|o|"	: "lvl_A1",
+					":|" 	: "lvl_A2"}
+	},
+	"lvl_B":{
+		"content"	:	"Merde, comment ça c'est passé?",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"nextElement":	"lvl_BANS"
+	},
+	"lvl_BANS":{
+		"content"	:	"A ton avis ",
+		"discussion": 	"discussion_1",
+		"type"		: 	"1",
+		"choices":{ ">:("	: "lvl_B1",
+					":,(" 	: "lvl_B2"}
+	},
+
+
+	"lvl_A1":{
+		"content"	:	"Noice",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"nextElement":	"lvl_A1ANS"
+	},
+	"lvl_A1ANS":{
+		"content"	:	"héhé",
+		"discussion": 	"discussion_1",
+		"type"		: 	"1",
+		"choices":{ "^^"	: "lvl_A11",
+					" ROFL" : "lvl_A21"}
+	},
+	"lvl_A2":{
+		"content"	:	"Oh",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"nextElement":	"lvl_A2ANS"
+	},
+	"lvl_A2ANS":{
+		"content"	:	"Ben ouais",
+		"discussion": 	"discussion_1",
+		"type"		: 	"1",
+		"choices":{ "^^'"	: "lvl_A21",
+					":@" 	: "lvl_A22"}
+	}
+
+}
