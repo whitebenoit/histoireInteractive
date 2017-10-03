@@ -90,8 +90,9 @@ function GameManager(){
 
 	this.getMessageByNameAnyDiscussion = function(name){
 		if(this.listDiscussion != []){
+			var currentGM = this;
 			$.each(this.listDiscussion, function(i,discussion){
-				var disc_message = this.getMessageByNameInThisDiscussion(name,discussion)
+				var disc_message = currentGM.getMessageByNameInThisDiscussion(name,discussion)
 				if(disc_message != null){
 					return disc_message;
 				}
@@ -162,7 +163,7 @@ function GameManager(){
 	this.postMessageIntoChat = function(discussion,message){
 		discussion.addMessage(message);
 		this.updateDisplay();
-		this.fireNextElement(message.nextElement);
+		// this.fireNextElement(message.nextElement);
 	}
 
 	this.fireNextElement = function(name){
@@ -197,6 +198,7 @@ function GameManager(){
 				this.addNewAnswerChoice(this.getDiscussionByName(message.discussion),message);
 			} else if (message.type == MSG_TYPE_INTERLOCUTEUR){
 				this.postMessageIntoChat(this.getDiscussionByName(message.discussion),message);
+				this.fireNextElement(message.nextElement);
 			}
 		}else{
 			console.log("ERR - fireNextElement(): message == null");
@@ -204,22 +206,22 @@ function GameManager(){
 	}
 
 	this.playerChoosing = function(donnee){
-
-		var content = donnee.sourceMessage.content;
-		var emoji = donnee.emoji;
-		var nextElement = donnee.nextElement;
+		var gameManager = donnee.data.gameManager
+		var message = donnee.data.sourceMessage;
+		var emoji = donnee.data.emoji;
+		var nextElement = donnee.data.nextElement;
 
 		// Create new message from the content of the answer and the emoji
-		var newContent = content + ' ' + emoji;
+		var newContent = message.content + ' ' + emoji;
 		// Create the name of the Answer
 		var answerName = message.name +'_ANS';
 
 		// Create the new message(answer) then post it on the discussion
-		var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,this.getDiscussionByName(message.discussion));
-		this.postMessageIntoChat(answer.discussion,answer);
+		var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,gameManager.getDiscussionByName(message.discussion));
+		gameManager.postMessageIntoChat(answer.discussion,answer);
 
 		// Launch the next element 'chosen' by the player
-		this.fireNextElement (nextElement);
+		gameManager.fireNextElement (nextElement);
 
 
 

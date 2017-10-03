@@ -54,22 +54,23 @@ function Discussion(name,gameManager){
 	}
 
 	this.addAnswerChoice = function(message){
-		this.locator.find(".chat_ans_text").hmtl(message.content);
-		this.locator.find("chat_ans_emoji_choice").html("");
+		this.locator.find(".chat_ans_text").text(message.content);
+		this.locator.find(".chat_ans_emoji_choice").text("");
+		var currentDiscussion = this;
 		$.each(message.choices,function(emoji,nextElement){
-			add_choice(emoji,nextElement,message)
+			currentDiscussion.add_choice(emoji,nextElement,message)
 		});
 	}
 
-	function add_choice(emoji,nextElement,sourceMessage){
+	this.add_choice = function(emoji,nextElement,sourceMessage){
 		// Create Html of the button
 		var but_html = '<button class="chat_emoji_but" id="'+nextElement+'">'+emoji+'</button>';
 		// Get the emplacement of the button
-		var chat_ans_emoji = this.locator.select("chat_ans_emoji_choice");
+		var chat_ans_emoji = this.locator.find(".chat_ans_emoji_choice");
 		// Add the button
 		chat_ans_emoji.append(but_html);
 		// Add the .click event
-		$('#'+nextElement).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,},this.gameManager.playerChoosing);
+		$('#'+nextElement).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager},this.gameManager.playerChoosing);
 	}
 
 
