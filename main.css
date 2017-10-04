@@ -53,3 +53,64 @@ body{
 
 
 }
+
+/*Animation*/
+ @keyframes chat_element{
+ 	0% {
+ 		opacity: 	0;
+		transform: scale3d(0.6,0.6,0.6);
+ 	}
+ 	40% {
+		transform: scale3d(1.05,1.05,1.05);
+ 	}
+ 	80% {
+		transform: scale3d(0.97,0.97,0.97);
+ 	}
+ 	100% {
+ 		opacity: 	1;
+		transform: scale3d(1,1,1);
+ 	}
+ }
+
+.chat_pipeline_element{
+	animation-name: chat_element;
+	animation-duration: 0.4s;
+}
+
+.chat_pipeline_spinner {
+	text-align: center;
+}
+
+
+
+
+@keyframes chat_waiting_bounce{
+	0%,100%{
+		transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1);
+	}
+
+}
+
+.chat_pipeline_spinner > div{
+	width: 		8px;
+	height: 	24px;
+	background-color: white;
+
+	display: 	inline-block;
+	animation: 	chat_waiting_bounce 1.2s infinite ease-in-out both;
+}
+
+.chat_pipeline_spinner .chat_bouncer2{
+	animation-delay: 0.2s;
+}
+
+.chat_pipeline_spinner .chat_bouncer3{
+	animation-delay: 0.40s;
+}
+
+.chat_pipeline_spinner .chat_bouncer4{
+	animation-delay: 0.60s;
+}

@@ -23,6 +23,21 @@
 		"content"	:	"Alors comment ça c'est passé?",
 		"discussion": 	"discussion_1",
 		"type"		: 	"0",
+		"delay"		:	"3500",
+		"nextElement":	"lvl_AX"
+	},
+	"lvl_AX":{
+		"content"	:	"hein?",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"delay"		:	"200",
+		"nextElement":	"lvl_AY"
+	},
+	"lvl_AY":{
+		"content"	:	"Dis moi?",
+		"discussion": 	"discussion_1",
+		"type"		: 	"0",
+		"delay"		:	"500",
 		"nextElement":	"lvl_AANS"
 	},
 	"lvl_AANS":{

@@ -2,6 +2,8 @@
 // Used to manage message within it
 var CHAT_CLASS_INTERLOCUTEUR = "chat_pipeline_message";
 var CHAT_CLASS_JOUEUR = "chat_pipeline_answer";
+// Default delay for the apparition of message in milliseconds !
+var MESSAGE_DELAY_DEFFAULT = 1500;
 
 
 function Discussion(name,gameManager){
@@ -13,6 +15,8 @@ function Discussion(name,gameManager){
 	this.locator;
 
 	this.addMessage = function(message){
+
+		// Parametring for the type of message Joueur/Interlocuteur
 		var chat_class;
 		if (message.type == MSG_TYPE_JOUEUR){
 			chat_class = CHAT_CLASS_JOUEUR;
@@ -20,13 +24,46 @@ function Discussion(name,gameManager){
 		}else if (message.type == MSG_TYPE_INTERLOCUTEUR){
 			chat_class = CHAT_CLASS_INTERLOCUTEUR;
 		}
-		// Appending
+		// Appending 
 		if (chat_class != undefined){
-			this.listMessage.push(message);
-			this.locator.find(".chat_pipeline").append('<div class="'+chat_class+'" id ="'+message.name+'">'+message.content +'</div>');
+			var currentDiscussion = this;
+
+			var msg_delay = MESSAGE_DELAY_DEFFAULT;
+			if (message.delay != undefined){
+				msg_delay = message.delay;
+			}
+			// If the message if from the player, no Waiting
+			if(chat_class == CHAT_CLASS_JOUEUR){
+				msg_delay = 0;
+			}else{
+			// If the message is from the interlocuteur we wait
+				currentDiscussion.addWaitingMessage(chat_class);
+			}
+
+			var delayTimeOut = setTimeout( function(){
+				currentDiscussion.locator.find(".chat_pipeline").find('.chat_pipeline_spinner').remove();
+				// Add the true message
+				currentDiscussion.listMessage.push(message);
+				currentDiscussion.locator.find(".chat_pipeline").append('<div class="'+chat_class+' chat_pipeline_element" id ="'+message.name+'">'+message.content +'</div>');
+				currentDiscussion.gameManager.fireNextElement(message.nextElement);
+			}, msg_delay);
+			
 		}else{
 			console.log("message type unidentified, currently is "+ message.type+" . Should be either "+CHAT_CLASS_INTERLOCUTEUR+" or "+CHAT_CLASS_JOUEUR);
 		}
+	}
+
+	this.addWaitingMessage = function(type){
+		var htmlWaitMsg = "";
+		htmlWaitMsg += '<div class="'+type+' chat_pipeline_element chat_pipeline_spinner" >';
+		htmlWaitMsg += '	<div class="chat_bouncer1"></div>';
+		htmlWaitMsg += '	<div class="chat_bouncer2"></div>';
+		htmlWaitMsg += '	<div class="chat_bouncer3"></div>';
+		htmlWaitMsg += '	<div class="chat_bouncer4"></div>';
+		htmlWaitMsg += '</div>';
+
+		this.locator.find(".chat_pipeline").append(htmlWaitMsg);
+
 	}
 
 	this.addToHTML = function(){
@@ -35,11 +72,11 @@ function Discussion(name,gameManager){
 			var htmlDisc = "";
 			htmlDisc +='<div id="'+this.name+'" class="chat_discussion">';
 			htmlDisc +='	<div class="chat_pipeline"> ';
-			htmlDisc +='		> ';
+			htmlDisc +='		 ';
 			htmlDisc +='	</div> ';
 			htmlDisc +='	<div class="chat_ans"> ';
 			htmlDisc +='		<div class="chat_ans_text"> ';
-			htmlDisc +='			>> ';
+			htmlDisc +='			 ';
 			htmlDisc +='		</div> ';
 			htmlDisc +='		<div class="chat_ans_emoji_choice"> ';
 			htmlDisc +='		</div> ';
@@ -70,7 +107,7 @@ function Discussion(name,gameManager){
 		// Add the button
 		chat_ans_emoji.append(but_html);
 		// Add the .click event
-		$('#'+nextElement).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager},this.gameManager.playerChoosing);
+		$('#'+nextElement).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager,"discussion":this},this.gameManager.playerChoosing);
 	}
 
 

@@ -154,7 +154,6 @@ function GameManager(){
 	this.addNewAnswerChoice = function(discussion,message){
 		if(message.type == MSG_TYPE_JOUEUR){
 			discussion.addAnswerChoice(message);
-			this.updateDisplay();
 		}else{
 			console.log("Inccorrect message type, should be Joueur = "+MSG_TYPE_JOUEUR);
 		}
@@ -162,11 +161,11 @@ function GameManager(){
 
 	this.postMessageIntoChat = function(discussion,message){
 		discussion.addMessage(message);
-		this.updateDisplay();
 		// this.fireNextElement(message.nextElement);
 	}
 
 	this.fireNextElement = function(name){
+
 
 		// Get the message that is next
 		var message = this.getMessageByNameAnyDiscussion(name);
@@ -198,7 +197,7 @@ function GameManager(){
 				this.addNewAnswerChoice(this.getDiscussionByName(message.discussion),message);
 			} else if (message.type == MSG_TYPE_INTERLOCUTEUR){
 				this.postMessageIntoChat(this.getDiscussionByName(message.discussion),message);
-				this.fireNextElement(message.nextElement);
+				// this.fireNextElement(message.nextElement);
 			}
 		}else{
 			console.log("ERR - fireNextElement(): message == null");
@@ -211,17 +210,21 @@ function GameManager(){
 		var emoji = donnee.data.emoji;
 		var nextElement = donnee.data.nextElement;
 
+		// Clear the choice possibilities
+		var currentDiscLoc = donnee.data.discussion.locator;
+		currentDiscLoc.find(".chat_ans_text").text("");
+		currentDiscLoc.find(".chat_ans_emoji_choice").text("");
+
+
+
 		// Create new message from the content of the answer and the emoji
 		var newContent = message.content + ' ' + emoji;
 		// Create the name of the Answer
 		var answerName = message.name +'_ANS';
-
 		// Create the new message(answer) then post it on the discussion
 		var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,gameManager.getDiscussionByName(message.discussion));
+		answer.nextElement = nextElement;
 		gameManager.postMessageIntoChat(answer.discussion,answer);
-
-		// Launch the next element 'chosen' by the player
-		gameManager.fireNextElement (nextElement);
 
 
 
