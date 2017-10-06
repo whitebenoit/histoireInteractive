@@ -4,6 +4,11 @@
 
 
 	},
+	"discussion_2":{
+		
+
+
+	},
 
 	"start":{
 		"content"	:	"Salut, tu es chez toi?",
@@ -23,7 +28,7 @@
 		"content"	:	"Alors comment ça c'est passé?",
 		"discussion": 	"discussion_1",
 		"type"		: 	"0",
-		"delay"		:	"3500",
+		"delay"		:	"2500",
 		"nextElement":	"lvl_AX"
 	},
 	"lvl_AX":{
@@ -44,7 +49,7 @@
 		"content"	:	"Tranquil",
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
-		"choices":{ "|o|"	: "lvl_A1",
+		"choices":{ "\\o/"	: "lvl_A1",
 					":|" 	: "lvl_A2"}
 	},
 	"lvl_B":{
@@ -87,6 +92,41 @@
 		"type"		: 	"1",
 		"choices":{ "^^'"	: "lvl_A21",
 					":@" 	: "lvl_A22"}
+	},
+
+
+
+	"lvl_A11":{
+		"content"	:	"Wesh gros, bien ou bien?",
+		"discussion": 	"discussion_2",
+		"type"		: 	"0",
+		"nextElement":	"lvl_A11X"
+	},
+	"lvl_A11X":{
+		"content"	:	"Bien",
+		"discussion": 	"discussion_2",
+		"type"		: 	"0",
+		"nextElement":	"lvl_A11ANS"
+	},
+	"lvl_A11ANS":{
+		"content"	:	"Bien",
+		"discussion": 	"discussion_2",
+		"type"		: 	"1",
+		"choices":{ "!"		: "lvl_A111",
+					"\\o/" 	: "lvl_A111"}
+	},
+	"lvl_A111":{
+		"content"	:	"Cool, bon tu viens samedi?",
+		"discussion": 	"discussion_2",
+		"type"		: 	"0",
+		"nextElement":	"lvl_A111ANS"
+	},
+	"lvl_A111ANS":{
+		"content"	:	"Sure",
+		"discussion": 	"discussion_2",
+		"type"		: 	"1",
+		"choices":{ ";)"		: "lvl_A111",
+					"(ಠ_ಠ)┌∩┐╮"	: "lvl_A111"}
 	}
 
 }

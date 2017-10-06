@@ -101,13 +101,11 @@ function Discussion(name,gameManager){
 
 	this.add_choice = function(emoji,nextElement,sourceMessage){
 		// Create Html of the button
-		var but_html = '<button class="chat_emoji_but" id="'+nextElement+'">'+emoji+'</button>';
+		var but_html = '<button class="chat_emoji_but" id="'+nextElement+'_but">'+emoji+'</button>';
 		// Get the emplacement of the button
 		var chat_ans_emoji = this.locator.find(".chat_ans_emoji_choice");
-		// Add the button
-		chat_ans_emoji.append(but_html);
-		// Add the .click event
-		$('#'+nextElement).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager,"discussion":this},this.gameManager.playerChoosing);
+		// Append the HTML and attach the .click event to the appended element.
+		$(but_html).appendTo(chat_ans_emoji).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager,"discussion":this},this.gameManager.playerChoosing);
 	}
 
 

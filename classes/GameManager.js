@@ -21,17 +21,62 @@ function GameManager(){
 	this.createDiscussion = function(discussionName){
 		var tmp_discussion = new Discussion(discussionName,this);
 		this.listDiscussion.push(tmp_discussion);
+		this.addDiscussionToHTMLList(tmp_discussion);
 		tmp_discussion.addToHTML();
 		return tmp_discussion;
 	}
 
+	this.setCurrentDiscussionClickEvent = function(donnee){
+		donnee.data.gameManager.setCurrentDiscussion(donnee.data.discussionName);
+	}
+
+	this.setCurrentDiscussion = function(discussionName){
+		if(this.isDiscussionByNameExist(discussionName)){
+			var oldDiscussion = this.currentDiscussionID;
+			var newDiscussion = discussionName;
+
+			// Remove previous if it exist
+			if (oldDiscussion !=undefined) {
+				// Remove the class from the previous current discussion in the list
+				$("#chat_disc_list").find('#'+oldDiscussion+'_list_element').removeClass('chat_disc_list_element_current');
+				// Add the hidden class
+				$("#chat_disc_list").find('#'+oldDiscussion).addClass('hidden');
+			}	
+
+			// Add new
+				// Add the class from the new current discussion in the list
+			$("#chat_disc_list").find('#'+newDiscussion+'_list_element').addClass('chat_disc_list_element_current');
+				// Remove the hidden class
+			$("#chat_disc_list").find('#'+oldDiscussion).removeClass('hidden');
+
+			// Change the GM current Discussion
+			this.currentDiscussionID = newDiscussion;
+			return true;
+		}else{
+			console.log('setCurrentDiscussion didn\'t find the discussion '+discussionName+' in the list');
+			return false;
+		}
+	}
+
+	this.addDiscussionToHTMLList = function(discussion){
+		var discHTML = "";
+		discHTML += '<div class="chat_disc_list_element"  id="'+discussion.name+'_list_element">';
+		discHTML += ''+discussion.name+'';
+		discHTML += '</div>';
+
+		$("#chat_disc_list").append(discHTML);
+
+		$('#chat_disc_list').find('#'+discussion.name+'_list_element').click({"discussionName":discussion.name,"gameManager":this},this.setCurrentDiscussionClickEvent);
+
+	}
+
 	this.isDiscussionByNameExist = function(discussionName){
 		if( this.listDiscussion != []){
-			$.each( this.listDiscussion, function(index,tmp_discu){
-				if( discussionName == tmp_discu.name){
+			for( var i = 0, l = this.listDiscussion.length;i<l;i++){
+				if( discussionName == this.listDiscussion[i].name){
 					return true;
 				}
-			});
+			}
 		}
 		return false;
 	}
@@ -54,7 +99,6 @@ function GameManager(){
 	*/
 	this.isMessageByNameExistInAnyDiscussion = function(name){
 		var exist = false;
-
 		if(this.listDiscussion != []){
 			$.each(this.listDiscussion, function(i,discussion){
 				if(this.isMessageByNameExistInThisDiscussion(name,discussion)){
@@ -64,7 +108,6 @@ function GameManager(){
 		}else{
 			return false;
 		}
-
 		return exist;
 	}
 
@@ -190,6 +233,7 @@ function GameManager(){
 				this.createDiscussion(message.discussion);
 			}
 
+			this.setCurrentDiscussion(message.discussion);
 
 			// Depending on the type of the message, add a new answer choice 
 			// or post a new message in the chat
