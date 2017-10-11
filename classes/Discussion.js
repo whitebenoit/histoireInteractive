@@ -70,7 +70,7 @@ function Discussion(name,gameManager){
 		// If the discussion is not yet in the html
 		if($("#"+this.name).length == 0 ){
 			var htmlDisc = "";
-			htmlDisc +='<div id="'+this.name+'" class="chat_discussion">';
+			htmlDisc +='<div id="'+this.name+'" class="chat_discussion hidden">';
 			htmlDisc +='	<div class="chat_pipeline"> ';
 			htmlDisc +='		 ';
 			htmlDisc +='	</div> ';
@@ -83,7 +83,7 @@ function Discussion(name,gameManager){
 			htmlDisc +='	</div> ';
 			htmlDisc +='</div> ';
 
-			$("#chat_window").append(htmlDisc);
+			$("#chat_window>#chat_curr_disc").append(htmlDisc);
 		}
 
 		this.locator = $("#"+this.name);

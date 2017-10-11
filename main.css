@@ -4,6 +4,10 @@ body{
 	
 }
 
+.hidden {
+	display: none;
+}
+
 
 
 #chat_window{
@@ -22,6 +26,10 @@ body{
     vertical-align:top;
 	width: 150px;
 }
+#chat_curr_disc{
+	width: 60%;
+}
+
 #chat_disc_list > .chat_disc_list_element{
 	font-weight: bold;
 	color: white;

@@ -40,14 +40,14 @@ function GameManager(){
 				// Remove the class from the previous current discussion in the list
 				$("#chat_disc_list").find('#'+oldDiscussion+'_list_element').removeClass('chat_disc_list_element_current');
 				// Add the hidden class
-				$("#chat_disc_list").find('#'+oldDiscussion).addClass('hidden');
+				$("#chat_window>#chat_curr_disc").find('#'+oldDiscussion).addClass('hidden');
 			}	
 
 			// Add new
 				// Add the class from the new current discussion in the list
 			$("#chat_disc_list").find('#'+newDiscussion+'_list_element').addClass('chat_disc_list_element_current');
 				// Remove the hidden class
-			$("#chat_disc_list").find('#'+oldDiscussion).removeClass('hidden');
+			$("#chat_window>#chat_curr_disc").find('#'+newDiscussion).removeClass('hidden');
 
 			// Change the GM current Discussion
 			this.currentDiscussionID = newDiscussion;
@@ -233,7 +233,7 @@ function GameManager(){
 				this.createDiscussion(message.discussion);
 			}
 
-			this.setCurrentDiscussion(message.discussion);
+			// this.setCurrentDiscussion(message.discussion);
 
 			// Depending on the type of the message, add a new answer choice 
 			// or post a new message in the chat
@@ -277,5 +277,9 @@ function GameManager(){
 
 	this.Init = function(){
 		this.fireNextElement("start");
+		var currGM = this;
+		var delayTimeOut = setTimeout( function(){
+			currGM.setCurrentDiscussion("discussion_1");
+		}, 300);
 	}
 }
