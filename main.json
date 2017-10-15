@@ -20,8 +20,8 @@
 		"content"	:	"Ouais",
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
-		"choices":{ ":)"	: "lvl_A",
-					":(" 	: "lvl_B"}
+		"choices":{ "Smiling_Face_Emoji_Icon"	: "lvl_A",
+					"\u03A9" 	: "lvl_B"}
 	},
 
 	"lvl_A":{
@@ -50,7 +50,7 @@
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
 		"choices":{ "\\o/"	: "lvl_A1",
-					":|" 	: "lvl_A2"}
+					"Face_with_Cold_Sweat_Emoji" 	: "lvl_A2"}
 	},
 	"lvl_B":{
 		"content"	:	"Merde, comment ça c'est passé?",

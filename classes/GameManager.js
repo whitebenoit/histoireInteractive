@@ -260,17 +260,31 @@ function GameManager(){
 		currentDiscLoc.find(".chat_ans_emoji_choice").text("");
 
 
-
-		// Create new message from the content of the answer and the emoji
-		var newContent = message.content + ' ' + emoji;
-		// Create the name of the Answer
-		var answerName = message.name +'_ANS';
-		// Create the new message(answer) then post it on the discussion
-		var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,gameManager.getDiscussionByName(message.discussion));
-		answer.nextElement = nextElement;
-		gameManager.postMessageIntoChat(answer.discussion,answer);
-
-
+		var myEmojiImage = new Image();
+		var currGM = this;
+		myEmojiImage.onload = function (){
+				// If emoji is an image
+				but_html = '<img class="chat_answer_emoji" src="'+myEmojiImage.src+'">';
+				// Create new message from the content of the answer and the emoji
+				var newContent = message.content + ' ' + but_html;
+				// Create the name of the Answer
+				var answerName = message.name +'_ANS';
+				// Create the new message(answer) then post it on the discussion
+				var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,gameManager.getDiscussionByName(message.discussion));
+				answer.nextElement = nextElement;
+				gameManager.postMessageIntoChat(answer.discussion,answer);
+		}
+		myEmojiImage.onerror = function(){
+				// Create new message from the content of the answer and the emoji
+				var newContent = message.content + ' ' + emoji;
+				// Create the name of the Answer
+				var answerName = message.name +'_ANS';
+				// Create the new message(answer) then post it on the discussion
+				var answer = new Message(answerName,MSG_TYPE_JOUEUR,newContent,gameManager.getDiscussionByName(message.discussion));
+				answer.nextElement = nextElement;
+				gameManager.postMessageIntoChat(answer.discussion,answer);
+		}
+		myEmojiImage.src = "images/emojis/"+emoji+'.png'; 
 
 	}
 

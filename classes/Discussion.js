@@ -101,13 +101,38 @@ function Discussion(name,gameManager){
 
 	this.add_choice = function(emoji,nextElement,sourceMessage){
 		// Create Html of the button
+		// Default value with no image swaping
 		var but_html = '<button class="chat_emoji_but" id="'+nextElement+'_but">'+emoji+'</button>';
+		var currDisc = this;
+		var myEmojiImage = new Image();
+		myEmojiImage.onload = function (){
+				// If emoji is an image
+				but_html = '<button class="chat_emoji_but" id="'+nextElement+'_but">';
+				but_html += '<img src="'+myEmojiImage.src+'">';
+				but_html += '</button>';
+				currDisc.add_choiceAppending(but_html,emoji,nextElement,sourceMessage);
+		}
+
+		myEmojiImage.onerror = function(){
+				// If emoji is not the name of an image, no change
+				currDisc.add_choiceAppending(but_html,emoji,nextElement,sourceMessage);
+		}
+
+		myEmojiImage.src = "images/emojis/"+emoji+'.png'; 
+
+
+		// Get the emplacement of the button
+		// var chat_ans_emoji = this.locator.find(".chat_ans_emoji_choice");
+		// Append the HTML and attach the .click event to the appended element.
+		// $(but_html).appendTo(chat_ans_emoji).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager,"discussion":this},this.gameManager.playerChoosing);
+	}
+
+	this.add_choiceAppending = function(but_html,emoji,nextElement,sourceMessage){
 		// Get the emplacement of the button
 		var chat_ans_emoji = this.locator.find(".chat_ans_emoji_choice");
 		// Append the HTML and attach the .click event to the appended element.
 		$(but_html).appendTo(chat_ans_emoji).click({"sourceMessage":sourceMessage,"nextElement":nextElement,"emoji":emoji,"gameManager":this.gameManager,"discussion":this},this.gameManager.playerChoosing);
 	}
-
 
 
 

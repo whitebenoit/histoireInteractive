@@ -22,6 +22,10 @@ body{
 	display: 	inline-block;
 }
 
+
+/*
+	Discussion list Style
+*/
 #chat_disc_list{;   
     vertical-align:top;
 	width: 150px;
@@ -43,6 +47,33 @@ body{
 }
 
 
+
+
+
+
+
+/* 
+	Answers of the player Style
+*/
+.chat_ans{
+	background-color: white;
+	min-height: 40px;
+}
+.chat_ans > div {
+	display: 	inline-block;
+}
+
+.chat_ans_emoji_choice{
+	float: right;
+}
+.chat_ans_emoji_choice>button{
+	
+}
+
+/*
+	Chat element (messages, overhaul) Style
+*/
+
 .chat_discussion{
 	min-width: 70%;
 	width: auto;
@@ -51,13 +82,6 @@ body{
 
 .chat_pipeline{
 	overflow: auto;
-	
-	
-}
-
-.chat_ans{
-	background-color: white;
-	min-height: 40px;
 }
 
 .chat_pipeline_answer, .chat_pipeline_message{
