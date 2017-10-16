@@ -21,7 +21,8 @@
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
 		"choices":{ "Smiling_Face_Emoji_Icon"	: "lvl_A",
-					"\u03A9" 	: "lvl_B"}
+					"\u03A9" 	: "lvl_B",
+					"Coucou" 	: "lvl_B"}
 	},
 
 	"lvl_A":{
