@@ -49,14 +49,16 @@ body{
 
 
 
-
+.chat_emoji_IMG{
+	height: 1em;
+}
 
 
 /* 
 	Answers of the player Style
 */
 .chat_ans{
-	background-color: white;
+	background-color: rgba(255,255,255,0.78);
 	min-height: 40px;
 }
 .chat_ans > div {

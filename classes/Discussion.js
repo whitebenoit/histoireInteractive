@@ -13,6 +13,9 @@ function Discussion(name,gameManager){
 	this.name = name;
 	this.gameManager = gameManager;
 	this.locator;
+	this.text;
+	this.portrait;
+	this.background;
 
 	this.addMessage = function(message){
 
@@ -84,11 +87,11 @@ function Discussion(name,gameManager){
 			htmlDisc +='</div> ';
 
 			$("#chat_window>#chat_curr_disc").append(htmlDisc);
+			$("#"+this.name).css({"background":'url("images/backgrounds/'+this.background+'")'});
 		}
-
 		this.locator = $("#"+this.name);
-
 	}
+
 
 	this.addAnswerChoice = function(message){
 		this.locator.find(".chat_ans_text").text(message.content);
@@ -108,7 +111,7 @@ function Discussion(name,gameManager){
 		myEmojiImage.onload = function (){
 				// If emoji is an image
 				but_html = '<button class="chat_emoji_but" id="'+nextElement+'_but">';
-				but_html += '<img src="'+myEmojiImage.src+'">';
+				but_html += '<img class="chat_emoji_IMG" src="'+myEmojiImage.src+'">';
 				but_html += '</button>';
 				currDisc.add_choiceAppending(but_html,emoji,nextElement,sourceMessage);
 		}

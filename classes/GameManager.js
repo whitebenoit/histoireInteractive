@@ -19,11 +19,19 @@ function GameManager(){
 	}
 
 	this.createDiscussion = function(discussionName){
-		var tmp_discussion = new Discussion(discussionName,this);
+		var tmp_discussion = this.createDiscussionObjectFromJSONByName(discussionName,this);
 		this.listDiscussion.push(tmp_discussion);
 		this.addDiscussionToHTMLList(tmp_discussion);
 		tmp_discussion.addToHTML();
 		return tmp_discussion;
+	}
+
+	this.createDiscussionObjectFromJSONByName = function(discussionName){
+		var tmp_JSONdiscussion 		= new Discussion(discussionName,this);
+		tmp_JSONdiscussion.text 	=  dataJSON[discussionName]["text"];
+		tmp_JSONdiscussion.portrait	=  dataJSON[discussionName]["portrait"];
+		tmp_JSONdiscussion.background= dataJSON[discussionName]["background"];
+		return tmp_JSONdiscussion;
 	}
 
 	this.setCurrentDiscussionClickEvent = function(donnee){
@@ -61,7 +69,7 @@ function GameManager(){
 	this.addDiscussionToHTMLList = function(discussion){
 		var discHTML = "";
 		discHTML += '<div class="chat_disc_list_element"  id="'+discussion.name+'_list_element">';
-		discHTML += ''+discussion.name+'';
+		discHTML += ''+discussion.text+'';
 		discHTML += '</div>';
 
 		$("#chat_disc_list").append(discHTML);
@@ -92,6 +100,7 @@ function GameManager(){
 		}
 		return returnedDiscussion;
 	}
+
 
 	/*
 	* Check is a message with this name exist in any discussion
@@ -264,7 +273,7 @@ function GameManager(){
 		var currGM = this;
 		myEmojiImage.onload = function (){
 				// If emoji is an image
-				but_html = '<img class="chat_answer_emoji" src="'+myEmojiImage.src+'">';
+				but_html = '<img class="chat_emoji_IMG" src="'+myEmojiImage.src+'">';
 				// Create new message from the content of the answer and the emoji
 				var newContent = message.content + ' ' + but_html;
 				// Create the name of the Answer
