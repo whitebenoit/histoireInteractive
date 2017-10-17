@@ -67,15 +67,37 @@ function GameManager(){
 	}
 
 	this.addDiscussionToHTMLList = function(discussion){
+		var currGM = this;
 		var discHTML = "";
 		discHTML += '<div class="chat_disc_list_element"  id="'+discussion.name+'_list_element">';
-		discHTML += ''+discussion.text+'';
+		discHTML += '\n	<div>';
+
+		var myPortraitImage = new Image();
+		myPortraitImage.onload = function (){
+				// If Portrait exist
+				discHTML += '\n		<img src="'+myPortraitImage.src+'">';
+				currGM.addDiscussionToHTMLLIstAppending(discHTML,discussion);
+		}
+		myPortraitImage.onerror = function(){
+				// If the portrait fail to load
+				discHTML += '\n		<img src="images/portraits/Default_Portrait.png">';
+				currGM.addDiscussionToHTMLLIstAppending(discHTML,discussion);
+		}
+		myPortraitImage.src = 'images/portraits/'+discussion.portrait;
+
+	}
+
+	this.addDiscussionToHTMLLIstAppending = function(discHTML,discussion){
+		
+		discHTML += '\n	</div>';
+		discHTML += '\n	<div>';
+		discHTML += '\n		'+discussion.text+'';
+		discHTML += '\n	</div>';
 		discHTML += '</div>';
 
 		$("#chat_disc_list").append(discHTML);
 
 		$('#chat_disc_list').find('#'+discussion.name+'_list_element').click({"discussionName":discussion.name,"gameManager":this},this.setCurrentDiscussionClickEvent);
-
 	}
 
 	this.isDiscussionByNameExist = function(discussionName){
@@ -188,20 +210,6 @@ function GameManager(){
 		return tmp_JSONmessage;
 	}
 
-
-	/*
-	this.getMessageByNameByJSON = function(name){
-		var tmp_message = dataJSON[name];
-		if (!this.isDiscussionByNameExist(name)){
-			this.createDiscussion(name,)
-		}
-		return tmp_message;
-	}
-
-	this.getDiscussionByNameByJSON = function(name){
-
-	}
-	*/
 
 	this.addNewAnswerChoice = function(discussion,message){
 		if(message.type == MSG_TYPE_JOUEUR){

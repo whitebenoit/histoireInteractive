@@ -94,12 +94,37 @@ function Discussion(name,gameManager){
 
 
 	this.addAnswerChoice = function(message){
-		this.locator.find(".chat_ans_text").text(message.content);
-		this.locator.find(".chat_ans_emoji_choice").text("");
-		var currentDiscussion = this;
-		$.each(message.choices,function(emoji,nextElement){
-			currentDiscussion.add_choice(emoji,nextElement,message)
-		});
+		var currDisc = this;
+		var textHtml = "";
+		var charIndex = 0;
+		this.typeAnswer(message,textHtml,charIndex,currDisc,function(){
+			currDisc.locator.find(".chat_ans_text").text(message.content);
+			currDisc.locator.find(".chat_ans_emoji_choice").text("");
+			$.each(message.choices,function(emoji,nextElement){
+				currDisc.add_choice(emoji,nextElement,message)
+			});
+		})
+		
+	}
+
+	this.typeAnswer = function(message,textHtml,charIndex,currDisc, callback){
+		var content = message.content
+		var interval = 100;
+		if (content.length < 10){
+			interval = 150;
+		}else if (content.length > 20){
+			interval = 50;
+		}
+
+		if (charIndex< content.length){
+			textHtml += content.charAt(charIndex++);
+			this.locator.find(".chat_ans_text").text(textHtml);
+			setTimeout( function() { 
+				currDisc.typeAnswer(message,textHtml,charIndex,currDisc, callback);
+				}, interval);
+		} else {
+			callback();
+		}
 	}
 
 	this.add_choice = function(emoji,nextElement,sourceMessage){

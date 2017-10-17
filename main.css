@@ -28,22 +28,40 @@ body{
 */
 #chat_disc_list{;   
     vertical-align:top;
+    padding:10px 0;
 	width: 150px;
 }
 #chat_curr_disc{
 	width: 60%;
 }
 
+
 #chat_disc_list > .chat_disc_list_element{
 	font-weight: bold;
 	color: white;
-	background-color: #DBC64F;
+	background-color: #D58E00;
 	padding:5px;
 	width:100px;
+	margin:auto;
+}
+#chat_disc_list > .chat_disc_list_element >div{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+
 }
 
+#chat_disc_list > .chat_disc_list_element >div>img{
+	display:block;
+	width:70%;
+	height: auto;
+	margin: auto;
+	border-radius:50%;
+}
+
+
 #chat_disc_list > .chat_disc_list_element_current{
-	background-color: #E69927;
+	background-color: #D50000;
 }
 
 
