@@ -1,7 +1,7 @@
 
 body{
 	background-color:#008080;
-	
+	font-family: "Lucida Grande", sans-serif;
 }
 
 .hidden {
@@ -181,6 +181,7 @@ body{
 .chat_pipeline_element{
 	animation-name: chat_element;
 	animation-duration: 0.4s;
+	font-size: 120%;
 }
 
 .chat_pipeline_spinner {

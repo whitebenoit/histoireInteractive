@@ -2,10 +2,10 @@
 	"discussion_1":{
 		"text"		:	"Môman",
 		"portrait"	:	"Maman_Portrait.png",
-		"background":	"Wave_Background.png"
-		
-
-
+		"background":	"Wave_Background.png",
+		"audioMsgInterlocuteur" : "Freesound-352651",
+		"audioMsgJoueur" : "CARTOON_1",
+		"audioChoixJoueur" : "PIVERT_1"
 	},
 	"discussion_2":{
 		
@@ -23,9 +23,10 @@
 		"content"	:	"Ouais",
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
-		"choices":{ "Smiling_Face_Emoji_Icon"	: "lvl_A",
+		"choices":{ "1f600"	: "lvl_A",
 					"\u03A9" 	: "lvl_B",
-					"Coucou" 	: "lvl_B"}
+					"1f636" 	: "lvl_B",
+					"1f605" 	: "lvl_B"}
 	},
 
 	"lvl_A":{
@@ -54,7 +55,7 @@
 		"discussion": 	"discussion_1",
 		"type"		: 	"1",
 		"choices":{ "\\o/"	: "lvl_A1",
-					"Face_with_Cold_Sweat_Emoji" 	: "lvl_A2"}
+					"1f625" 	: "lvl_A2"}
 	},
 	"lvl_B":{
 		"content"	:	"Merde, comment ça c'est passé?",

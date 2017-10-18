@@ -31,6 +31,9 @@ function GameManager(){
 		tmp_JSONdiscussion.text 	=  dataJSON[discussionName]["text"];
 		tmp_JSONdiscussion.portrait	=  dataJSON[discussionName]["portrait"];
 		tmp_JSONdiscussion.background= dataJSON[discussionName]["background"];
+		tmp_JSONdiscussion.audioMsgInterlocuteur= dataJSON[discussionName]["audioMsgInterlocuteur"];
+		tmp_JSONdiscussion.audioMsgJoueur= dataJSON[discussionName]["audioMsgJoueur"];
+		tmp_JSONdiscussion.audioChoixJoueur= dataJSON[discussionName]["audioChoixJoueur"];
 		return tmp_JSONdiscussion;
 	}
 
@@ -270,6 +273,10 @@ function GameManager(){
 		var message = donnee.data.sourceMessage;
 		var emoji = donnee.data.emoji;
 		var nextElement = donnee.data.nextElement;
+
+		
+		myAudio = new Audio("sounds/"+donnee.data.discussion.audioChoixJoueur+".mp3");
+		myAudio.play();
 
 		// Clear the choice possibilities
 		var currentDiscLoc = donnee.data.discussion.locator;

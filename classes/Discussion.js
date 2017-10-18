@@ -21,6 +21,7 @@ function Discussion(name,gameManager){
 
 		// Parametring for the type of message Joueur/Interlocuteur
 		var chat_class;
+		var message_type = message.type;
 		if (message.type == MSG_TYPE_JOUEUR){
 			chat_class = CHAT_CLASS_JOUEUR;
 		// If the message is from the interlocuteur
@@ -48,6 +49,13 @@ function Discussion(name,gameManager){
 				// Add the true message
 				currentDiscussion.listMessage.push(message);
 				currentDiscussion.locator.find(".chat_pipeline").append('<div class="'+chat_class+' chat_pipeline_element" id ="'+message.name+'">'+message.content +'</div>');
+				if (message_type == MSG_TYPE_INTERLOCUTEUR) {
+					myAudio = new Audio("sounds/"+currentDiscussion.audioMsgInterlocuteur+".mp3");
+					myAudio.play();
+				}else if (message_type == MSG_TYPE_JOUEUR){
+					myAudio = new Audio("sounds/"+currentDiscussion.audioMsgJoueur+".mp3");
+					myAudio.play();
+				}
 				currentDiscussion.gameManager.fireNextElement(message.nextElement);
 			}, msg_delay);
 			
