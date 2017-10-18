@@ -68,7 +68,11 @@ body{
 
 
 .chat_emoji_IMG{
-	height: 1em;
+	height: 2em;
+}
+
+.chat_emoji_button_IMG{
+	height: 3em;
 }
 
 

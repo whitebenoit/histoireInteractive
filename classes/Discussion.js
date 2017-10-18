@@ -144,7 +144,7 @@ function Discussion(name,gameManager){
 		myEmojiImage.onload = function (){
 				// If emoji is an image
 				but_html = '<button class="chat_emoji_but" id="'+nextElement+'_but">';
-				but_html += '<img class="chat_emoji_IMG" src="'+myEmojiImage.src+'">';
+				but_html += '<img class="chat_emoji_button_IMG" src="'+myEmojiImage.src+'">';
 				but_html += '</button>';
 				currDisc.add_choiceAppending(but_html,emoji,nextElement,sourceMessage);
 		}

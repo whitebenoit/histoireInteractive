@@ -1,159 +1,3 @@
-{
-	"discussion_1":{
-		"text"		:	"M√¥man",
-		"portrait"	:	"Maman_Portrait.png",
-		"background":	"Wave_Background.png",
-		"audioMsgInterlocuteur" : "Freesound-352651",
-		"audioMsgJoueur" : "CARTOON_1",
-		"audioChoixJoueur" : "PIVERT_1"
-	},
-	"discussion_2":{
-		
-
-
-	},
-
-	"CORP":{
-
-
-
-	},
-
-	"start":{
-		"content"	:	"Salut, tu es chez toi?",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"nextElement":	"startANS"
-	},
-	"startANS":{
-		"content"	:	"Ouais",
-		"discussion": 	"discussion_1",
-		"type"		: 	"1",
-		"choices":{ "1f600"	: "lvl_A",
-					"\u03A9" 	: "SEC-01",
-					"1f636" 	: "lvl_B",
-					"1f605" 	: "lvl_B"}
-	},
-
-	"lvl_A":{
-		"content"	:	"Alors comment √ßa c'est pass√©?",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"delay"		:	"2500",
-		"nextElement":	"lvl_AX"
-	},
-	"lvl_AX":{
-		"content"	:	"hein?",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"delay"		:	"200",
-		"nextElement":	"lvl_AY"
-	},
-	"lvl_AY":{
-		"content"	:	"Dis moi?",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"delay"		:	"500",
-		"nextElement":	"lvl_AANS"
-	},
-	"lvl_AANS":{
-		"content"	:	"Tranquil",
-		"discussion": 	"discussion_1",
-		"type"		: 	"1",
-		"choices":{ "\\o/"	: "lvl_A1",
-					"1f625" 	: "lvl_A2"}
-	},
-	"lvl_B":{
-		"content"	:	"Merde, comment √ßa c'est pass√©?",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"nextElement":	"lvl_BANS"
-	},
-	"lvl_BANS":{
-		"content"	:	"A ton avis ",
-		"discussion": 	"discussion_1",
-		"type"		: 	"1",
-		"choices":{ ">:("	: "lvl_B1",
-					":,(" 	: "lvl_B2"}
-	},
-
-
-	"lvl_A1":{
-		"content"	:	"Noice",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"nextElement":	"lvl_A1ANS"
-	},
-	"lvl_A1ANS":{
-		"content"	:	"h√©h√©",
-		"discussion": 	"discussion_1",
-		"type"		: 	"1",
-		"choices":{ "^^"	: "lvl_A11",
-					" ROFL" : "lvl_A21"}
-	},
-	"lvl_A2":{
-		"content"	:	"Oh",
-		"discussion": 	"discussion_1",
-		"type"		: 	"0",
-		"nextElement":	"lvl_A2ANS"
-	},
-	"lvl_A2ANS":{
-		"content"	:	"Ben ouais",
-		"discussion": 	"discussion_1",
-		"type"		: 	"1",
-		"choices":{ "^^'"	: "lvl_A21",
-					":@" 	: "lvl_A22"}
-	},
-
-
-
-	"lvl_A11":{
-		"content"	:	"Wesh gros, bien ou bien?",
-		"discussion": 	"discussion_2",
-		"type"		: 	"0",
-		"nextElement":	"lvl_A11X"
-	},
-	"lvl_A11X":{
-		"content"	:	"Bien",
-		"discussion": 	"discussion_2",
-		"type"		: 	"0",
-		"nextElement":	"lvl_A11ANS"
-	},
-	"lvl_A11ANS":{
-		"content"	:	"Bien",
-		"discussion": 	"discussion_2",
-		"type"		: 	"1",
-		"choices":{ "!"		: "lvl_A111",
-					"\\o/" 	: "lvl_A111"}
-	},
-	"lvl_A111":{
-		"content"	:	"Cool, bon tu viens samedi?",
-		"discussion": 	"discussion_2",
-		"type"		: 	"0",
-		"nextElement":	"lvl_A111ANS"
-	},
-	"lvl_A111ANS":{
-		"content"	:	"Sure",
-		"discussion": 	"discussion_2",
-		"type"		: 	"1",
-		"choices":{ ";)"		: "lvl_A111",
-					"(‡≤†_‡≤†)‚îå‚à©‚îê‚ïÆ"	: "lvl_A111"}
-	},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 "SEC-01":{
     "content":    "report du meeting de demain",
@@ -163,7 +7,7 @@
     "nextElement":"CV-01"
 },
 "CV-01":{
-    "content":    "cher JL, √† quand voulez vous reporter le meeting¬†?",
+    "content":    "cher JL, ‡ quand voulez vous reporter le meeting†?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -190,14 +34,14 @@
     }
 },
 "JL-02":{
-    "content":    "√ßa te laisse le temps de mobiliser ton crew √† 200%¬†!",
+    "content":    "Áa te laisse le temps de mobiliser ton crew ‡ 200%†!",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-03"
 },
 "JL-03":{
-    "content":    "Mais √ßa serait not bad que tu me fournisse un rapport d'√©tape",
+    "content":    "Mais Áa serait not bad que tu me fournisse un rapport d'Ètape",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -221,14 +65,14 @@
     }
 },
 "JL-05":{
-    "content":    "et j'attends un d√©brief sur les √©l√©ments de ton service en dessous des attentes",
+    "content":    "et j'attends un dÈbrief sur les ÈlÈments de ton service en dessous des attentes",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-04"
 },
 "JL-06":{
-    "content":    "tu dois √™tre force de proposition",
+    "content":    "tu dois Ítre force de proposition",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -242,7 +86,7 @@
     "nextElement":"CV-05"
 },
 "CV-04":{
-    "content":    "ok, mais les profils sont compl√©mentaires dans l'√©quipe",
+    "content":    "ok, mais les profils sont complÈmentaires dans l'Èquipe",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -252,7 +96,7 @@
     }
 },
 "CV-05":{
-    "content":    "voyons nous en 1 to 1¬†?",
+    "content":    "voyons nous en 1 to 1†?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -283,7 +127,7 @@
     "nextElement":"CV-06"
 },
 "CV-06":{
-    "content":    "ok, stay focus¬†!",
+    "content":    "ok, stay focus†!",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -293,7 +137,7 @@
     }
 },
 "CV-07":{
-    "content":    "ok, on avait parl√© d'un plan global de formation¬†?",
+    "content":    "ok, on avait parlÈ d'un plan global de formation†?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -310,7 +154,7 @@
     "nextElement":"CV-08"
 },
 "JL-12":{
-    "content":    "yes, et le ptit dej offert¬†!?",
+    "content":    "yes, et le ptit dej offert†!?",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -341,7 +185,7 @@
     "nextElement":"CV-09"
 },
 "CV-09":{
-    "content":    "ok, et qui cover les instances¬†?",
+    "content":    "ok, et qui cover les instances†?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -351,14 +195,14 @@
     }
 },
 "JL-15":{
-    "content":    "c'est un challenge que tu rel√®veras superclean",
+    "content":    "c'est un challenge que tu relËveras superclean",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-10"
 },
 "JL-16":{
-    "content":    "tu sauras √™tre force de proposition",
+    "content":    "tu sauras Ítre force de proposition",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -375,7 +219,7 @@
     }
 },
 "CV-11":{
-    "content":    "En clair, vous m'envoyez √† la mine",
+    "content":    "En clair, vous m'envoyez ‡ la mine",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -385,14 +229,14 @@
     }
 },
 "JL-17":{
-    "content":    "c'est une nouvelle aventure pour une grande partie de la crew prod, that's it¬†?",
+    "content":    "c'est une nouvelle aventure pour une grande partie de la crew prod, that's it†?",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3000",
     "nextElement":"JL-18"
 },
 "JL-18":{
-    "content":    "Mais nous serons vigilents √† valoriser les bons √©l√©ments",
+    "content":    "Mais nous serons vigilents ‡ valoriser les bons ÈlÈments",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "2000",
@@ -409,14 +253,14 @@
     }
 },
 "JL-19":{
-    "content":    "cette task peut √™tre un tremplin pour ton team",
+    "content":    "cette task peut Ítre un tremplin pour ton team",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"JL-21"
 },
 "JL-20":{
-    "content":    "√ßa va laguer un peu, mais on est en search de nouveaux talents au service 4A",
+    "content":    "Áa va laguer un peu, mais on est en search de nouveaux talents au service 4A",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -438,14 +282,14 @@
     }
 },
 "JL-22":{
-    "content":    "putain, tu arr√™tes √ßa now¬†!",
+    "content":    "putain, tu arrÍtes Áa now†!",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"JL-23"
 },
 "JL-23":{
-    "content":    "y'a aussi des postes √† pourvoir dans notre filiale de cayenne",
+    "content":    "y'a aussi des postes ‡ pourvoir dans notre filiale de cayenne",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3000",
@@ -459,7 +303,7 @@
     "nextElement":"CV-13"
 },
 "CV-13":{
-    "content":    "naaaan¬†!",
+    "content":    "naaaan†!",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -469,14 +313,14 @@
     }
 },
 "JL-25":{
-    "content":    "elle le m√©rite bien",
+    "content":    "elle le mÈrite bien",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-14"
 },
 "CV-14":{
-    "content":    "mais elle pars en cong√© mater dans 3 mois¬†!",
+    "content":    "mais elle pars en congÈ mater dans 3 mois†!",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -486,7 +330,7 @@
     }
 },
 "JL-26":{
-    "content":    "elle a les comp√©tences",
+    "content":    "elle a les compÈtences",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -500,10 +344,9 @@
     "nextElement":"JL-28"
 },
 "JL-28":{
-    "content":    "0148257542¬†: service des plans de retraite am√©nag√©",
+    "content":    "0148257542†: service des plans de retraite amÈnagÈ",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":""
-}
 }
