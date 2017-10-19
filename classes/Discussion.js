@@ -98,7 +98,7 @@ function Discussion(name,gameManager){
 			htmlDisc +='</div> ';
 
 			$("#chat_window>#chat_curr_disc").append(htmlDisc);
-			$("#"+this.name).css({"background":'url("images/backgrounds/'+this.background+'")'});
+			$("#"+this.name).css({"background":'url("images/backgrounds/'+this.background+'") no-repeat center','background-size': 'cover'});
 		}
 		this.locator = $("#"+this.name);
 	}

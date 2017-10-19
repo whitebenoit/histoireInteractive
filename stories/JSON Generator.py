@@ -7,7 +7,7 @@ def get_last(a):
     if e is not "":
       return len(a) - i - 1
   return -1
-name = "INTRO-diff"
+name = "Girls CSV"
 file= open(name+".json","w+")
 
 
@@ -30,7 +30,7 @@ with open(name+'.csv') as csvfile:
                 rowIndexofLast = get_last(row)
                 for i in range(6,rowIndexofLast,2):
                     result +='        "'+row[i]+'":"'+row[i+1]+'"'
-                    if (i+1 != rowIndexofLast):
+                    if (i+1 != rowIndexofLast and i != rowIndexofLast):
                         result += ','
                     result += '\n'
                 result +='    }\n'
