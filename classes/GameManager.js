@@ -93,7 +93,7 @@ function GameManager(){
 	this.addDiscussionToHTMLLIstAppending = function(discHTML,discussion){
 		
 		discHTML += '\n	</div>';
-		discHTML += '\n	<div>';
+		discHTML += '\n	<div class="chat_disc_list_text">';
 		discHTML += '\n		'+discussion.text+'';
 		discHTML += '\n	</div>';
 		discHTML += '</div>';
@@ -253,7 +253,6 @@ function GameManager(){
 				this.createDiscussion(message.discussion);
 			}
 
-			// this.setCurrentDiscussion(message.discussion);
 
 			// Depending on the type of the message, add a new answer choice 
 			// or post a new message in the chat
@@ -314,10 +313,11 @@ function GameManager(){
 
 
 	this.Init = function(){
-		this.fireNextElement("start");
+		var firstElementName = "start";
+		this.fireNextElement(firstElementName);
 		var currGM = this;
 		var delayTimeOut = setTimeout( function(){
-			currGM.setCurrentDiscussion("discussion_1");
-		}, 300);
+			currGM.setCurrentDiscussion("INTRO");
+		}, 800);
 	}
 }

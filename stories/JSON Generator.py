@@ -7,7 +7,7 @@ def get_last(a):
     if e is not "":
       return len(a) - i - 1
   return -1
-name = "CORP-diff"
+name = "INTRO-diff"
 file= open(name+".json","w+")
 
 
@@ -43,3 +43,4 @@ with open(name+'.csv') as csvfile:
 
 file.truncate()
 file.write(finalResult)
+file.close()

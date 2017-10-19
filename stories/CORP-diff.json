@@ -1,13 +1,13 @@
 
 "SEC-01":{
-    "content":    "report du meeting de demain",
+    "content":    "Report du meeting de demain",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-01"
 },
 "CV-01":{
-    "content":    "cher JL, à quand voulez vous reporter le meeting ?",
+    "content":    "Cher JL, à quand voulez vous reporter le meeting ?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -17,7 +17,7 @@
     }
 },
 "JL-01":{
-    "content":    "check le mediaflow",
+    "content":    "Check le mediaflow",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3500",
@@ -34,7 +34,7 @@
     }
 },
 "JL-02":{
-    "content":    "ça te laisse le temps de mobiliser ton crew à 200% !",
+    "content":    "Ca te laisse le temps de mobiliser ton crew à 200% !",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -48,7 +48,7 @@
     "nextElement":"CV-03"
 },
 "JL-04":{
-    "content":    "et tu peux aussi check le projet de JM",
+    "content":    "Et tu peux aussi check le projet de JM",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -65,28 +65,28 @@
     }
 },
 "JL-05":{
-    "content":    "et j'attends un débrief sur les éléments de ton service en dessous des attentes",
+    "content":    "Et j'attends un débrief sur les éléments de ton service en dessous des attentes",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-04"
 },
 "JL-06":{
-    "content":    "tu dois être force de proposition",
+    "content":    "Tu dois être force de proposition",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-05"
 },
 "JL-07":{
-    "content":    "j'ai confiance en toi",
+    "content":    "J'ai confiance en toi",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-05"
 },
 "CV-04":{
-    "content":    "ok, mais les profils sont complémentaires dans l'équipe",
+    "content":    "Ok, mais les profils sont complémentaires dans l'équipe",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -96,7 +96,7 @@
     }
 },
 "CV-05":{
-    "content":    "voyons nous en 1 to 1 ?",
+    "content":    "Voyons nous en 1 to 1 ?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -106,14 +106,14 @@
     }
 },
 "JL-08":{
-    "content":    "je suis full time all week",
+    "content":    "Je suis full time all week",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "5000",
     "nextElement":"CV-07"
 },
 "JL-09":{
-    "content":    "non, tu prends le lead",
+    "content":    "Non, tu prends le lead",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -127,7 +127,7 @@
     "nextElement":"CV-06"
 },
 "CV-06":{
-    "content":    "ok, stay focus !",
+    "content":    "Ok, stay focus !",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -137,7 +137,7 @@
     }
 },
 "CV-07":{
-    "content":    "ok, on avait parlé d'un plan global de formation ?",
+    "content":    "Ok, on avait parlé d'un plan global de formation ?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -147,28 +147,28 @@
     }
 },
 "JL-11":{
-    "content":    "no way",
+    "content":    "No way",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "4000",
     "nextElement":"CV-08"
 },
 "JL-12":{
-    "content":    "yes, et le ptit dej offert !?",
+    "content":    "Yes, et le ptit dej offert !?",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-08"
 },
 "JL-13":{
-    "content":    "le N+3 compte sur ton feedback",
+    "content":    "Le N+3 compte sur ton feedback",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-08"
 },
 "CV-08":{
-    "content":    "ok",
+    "content":    "Ok",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -178,14 +178,14 @@
     }
 },
 "JL-14":{
-    "content":    "c'est touchy, on a 5 mois pour changer d'axe de prod",
+    "content":    "C'est touchy, on a 5 mois pour changer d'axe de prod",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3000",
     "nextElement":"CV-09"
 },
 "CV-09":{
-    "content":    "ok, et qui cover les instances ?",
+    "content":    "Ok, et qui cover les instances ?",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -195,21 +195,21 @@
     }
 },
 "JL-15":{
-    "content":    "c'est un challenge que tu relèveras superclean",
+    "content":    "C'est un challenge que tu relèveras superclean",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-10"
 },
 "JL-16":{
-    "content":    "tu sauras être force de proposition",
+    "content":    "Tu sauras être force de proposition",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-10"
 },
 "CV-10":{
-    "content":    "ok",
+    "content":    "Ok",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -229,7 +229,7 @@
     }
 },
 "JL-17":{
-    "content":    "c'est une nouvelle aventure pour une grande partie de la crew prod, that's it ?",
+    "content":    "C'est une nouvelle aventure pour une grande partie de la crew prod, that's it ?",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3000",
@@ -243,7 +243,7 @@
     "nextElement":"CV-12"
 },
 "CV-12":{
-    "content":    "ok",
+    "content":    "Ok",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -253,28 +253,28 @@
     }
 },
 "JL-19":{
-    "content":    "cette task peut être un tremplin pour ton team",
+    "content":    "Cette task peut être un tremplin pour ton team",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"JL-21"
 },
 "JL-20":{
-    "content":    "ça va laguer un peu, mais on est en search de nouveaux talents au service 4A",
+    "content":    "Ca va laguer un peu, mais on est en search de nouveaux talents au service 4A",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"JL-21"
 },
 "JL-21":{
-    "content":    "et franchement, stop now avec tes icones de weirdo",
+    "content":    "Et franchement, stop now avec tes icones de weirdo",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-12"
 },
-"CV-12":{
-    "content":    "ok",
+"CV-13":{
+    "content":    "Ok",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -282,28 +282,28 @@
     }
 },
 "JL-22":{
-    "content":    "putain, tu arrêtes ça now !",
+    "content":    "Putain, tu arrêtes ça now !",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"JL-23"
 },
 "JL-23":{
-    "content":    "y'a aussi des postes à pourvoir dans notre filiale de cayenne",
+    "content":    "Y'a aussi des postes à pourvoir dans notre filiale de cayenne",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "3000",
     "nextElement":"JL-24"
 },
 "JL-24":{
-    "content":    "check le mediaflow...",
+    "content":    "Check le mediaflow...",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "6000",
     "nextElement":"CV-13"
 },
-"CV-13":{
-    "content":    "naaaan !",
+"CV-14":{
+    "content":    "comment ça !???",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -313,14 +313,14 @@
     }
 },
 "JL-25":{
-    "content":    "elle le mérite bien",
+    "content":    "Elle le mérite bien",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
     "nextElement":"CV-14"
 },
-"CV-14":{
-    "content":    "mais elle pars en congé mater dans 3 mois !",
+"CV-15":{
+    "content":    "Mais elle pars en congé mater dans 3 mois !",
     "discussion": "CORP",
     "type":       "1",
     "choices":{ 
@@ -330,23 +330,23 @@
     }
 },
 "JL-26":{
-    "content":    "elle a les compétences",
+    "content":    "Elle a les compétences",
     "discussion": "CORP",
     "type":       "0",
-    "delay":      "",
+    "delay":      "2000",
     "nextElement":"JL-27"
 },
 "JL-27":{
-    "content":    "personne n'est pas irremplacable",
+    "content":    "Personne n'est pas irremplaçable",
     "discussion": "CORP",
     "type":       "0",
-    "delay":      "",
+    "delay":      "4000",
     "nextElement":"JL-28"
 },
 "JL-28":{
     "content":    "0148257542 : service des plans de retraite aménagé",
     "discussion": "CORP",
     "type":       "0",
-    "delay":      "",
+    "delay":      "5000",
     "nextElement":""
 }

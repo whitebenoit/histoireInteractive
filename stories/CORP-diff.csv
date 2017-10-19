@@ -1,44 +1,44 @@
-SEC-01,report du meeting de demain,CORP,0,,CV-01,,,,,,
-CV-01,"cher JL, à quand voulez vous reporter le meeting ?",CORP,1,,,1f643,JL-01,1f603,JL-01,1F60E,JL-01
-JL-01,check le mediaflow,CORP,0,3500,CV-02,,,,,,
+SEC-01,Report du meeting de demain,CORP,0,,CV-01,,,,,,
+CV-01,"Cher JL, à quand voulez vous reporter le meeting ?",CORP,1,,,1f643,JL-01,1f603,JL-01,1F60E,JL-01
+JL-01,Check le mediaflow,CORP,0,3500,CV-02,,,,,,
 CV-02,ok,CORP,1,,,1f60f,JL-02,1f920,JL-03,1f608,JL-04
-JL-02,ça te laisse le temps de mobiliser ton crew à 200% !,CORP,0,,CV-03,,,,,,
+JL-02,Ca te laisse le temps de mobiliser ton crew à 200% !,CORP,0,,CV-03,,,,,,
 JL-03,Mais ça serait not bad que tu me fournisse un rapport d'étape,CORP,0,,CV-03,,,,,,
-JL-04,et tu peux aussi check le projet de JM,CORP,0,,CV-03,,,,,,
+JL-04,Et tu peux aussi check le projet de JM,CORP,0,,CV-03,,,,,,
 CV-03,ok,CORP,1,,,1F607,JL-05,1f630,JL-07,1F60E,JL-06
-JL-05,et j'attends un débrief sur les éléments de ton service en dessous des attentes,CORP,0,,CV-04,,,,,,
-JL-06,tu dois être force de proposition,CORP,0,,CV-05,,,,,,
-JL-07,j'ai confiance en toi,CORP,0,,CV-05,,,,,,
-CV-04,"ok, mais les profils sont complémentaires dans l'équipe",CORP,1,,,1f914,JL-10,1f632,JL-09,1f609,JL-08
-CV-05,voyons nous en 1 to 1 ?,CORP,1,,,1f92b,JL-08,1F913,JL-09,1f916,JL-10
-JL-08,je suis full time all week,CORP,0,5000,CV-07,,,,,,
-JL-09,"non, tu prends le lead",CORP,0,,CV-07,,,,,,
+JL-05,Et j'attends un débrief sur les éléments de ton service en dessous des attentes,CORP,0,,CV-04,,,,,,
+JL-06,Tu dois être force de proposition,CORP,0,,CV-05,,,,,,
+JL-07,J'ai confiance en toi,CORP,0,,CV-05,,,,,,
+CV-04,"Ok, mais les profils sont complémentaires dans l'équipe",CORP,1,,,1f914,JL-10,1f632,JL-09,1f609,JL-08
+CV-05,Voyons nous en 1 to 1 ?,CORP,1,,,1f92b,JL-08,1F913,JL-09,1f916,JL-10
+JL-08,Je suis full time all week,CORP,0,5000,CV-07,,,,,,
+JL-09,"Non, tu prends le lead",CORP,0,,CV-07,,,,,,
 JL-10,"No way, tu appliques le process . Period",CORP,0,,CV-06,,,,,,
-CV-06,"ok, stay focus !",CORP,1,,,1F607,JL-13,1f9d0,JL-13,1f47d,JL-13
-CV-07,"ok, on avait parlé d'un plan global de formation ?",CORP,1,,,1f47b,JL-12,1F913,JL-11,1f601,JL-11
-JL-11,no way,CORP,0,4000,CV-08,,,,,,
-JL-12,"yes, et le ptit dej offert !?",CORP,0,,CV-08,,,,,,
-JL-13,le N+3 compte sur ton feedback,CORP,0,,CV-08,,,,,,
-CV-08,ok,CORP,1,2000,,1f910,JL-14,1f644,JL-14,1f47d,JL-14
-JL-14,"c'est touchy, on a 5 mois pour changer d'axe de prod",CORP,0,3000,CV-09,,,,,,
-CV-09,"ok, et qui cover les instances ?",CORP,1,,,1f928,JL-15,1f631,JL-16,1f47e,JL-16
-JL-15,c'est un challenge que tu relèveras superclean,CORP,0,,CV-10,,,,,,
-JL-16,tu sauras être force de proposition,CORP,0,,CV-10,,,,,,
-CV-10,ok,CORP,1,3000,,1f649,CV-11,1f64a,CV-11,1f648,CV-11
+CV-06,"Ok, stay focus !",CORP,1,,,1F607,JL-13,1f9d0,JL-13,1f47d,JL-13
+CV-07,"Ok, on avait parlé d'un plan global de formation ?",CORP,1,,,1f47b,JL-12,1F913,JL-11,1f601,JL-11
+JL-11,No way,CORP,0,4000,CV-08,,,,,,
+JL-12,"Yes, et le ptit dej offert !?",CORP,0,,CV-08,,,,,,
+JL-13,Le N+3 compte sur ton feedback,CORP,0,,CV-08,,,,,,
+CV-08,Ok,CORP,1,2000,,1f910,JL-14,1f644,JL-14,1f47d,JL-14
+JL-14,"C'est touchy, on a 5 mois pour changer d'axe de prod",CORP,0,3000,CV-09,,,,,,
+CV-09,"Ok, et qui cover les instances ?",CORP,1,,,1f928,JL-15,1f631,JL-16,1f47e,JL-16
+JL-15,C'est un challenge que tu relèveras superclean,CORP,0,,CV-10,,,,,,
+JL-16,Tu sauras être force de proposition,CORP,0,,CV-10,,,,,,
+CV-10,Ok,CORP,1,3000,,1f649,CV-11,1f64a,CV-11,1f648,CV-11
 CV-11,"En clair, vous m'envoyez à la mine",CORP,1,,,1f4a9,JL-17,2620,JL-17,1f385,JL-17
-JL-17,"c'est une nouvelle aventure pour une grande partie de la crew prod, that's it ?",CORP,0,3000,JL-18,,,,,,
+JL-17,"C'est une nouvelle aventure pour une grande partie de la crew prod, that's it ?",CORP,0,3000,JL-18,,,,,,
 JL-18,Mais nous serons vigilents à valoriser les bons éléments,CORP,0,2000,CV-12,,,,,,
-CV-12,ok,CORP,1,,,263a,JL-19,1f927,JL-20,1F60E,JL-19
-JL-19,cette task peut être un tremplin pour ton team,CORP,0,,JL-21,,,,,,
-JL-20,"ça va laguer un peu, mais on est en search de nouveaux talents au service 4A",CORP,0,,JL-21,,,,,,
-JL-21,"et franchement, stop now avec tes icones de weirdo",CORP,0,,CV-12,,,,,,
-CV-12,ok,CORP,1,,,1f609,JL-22,,,,
-JL-22,"putain, tu arrêtes ça now !",CORP,0,,JL-23,,,,,,
-JL-23,y'a aussi des postes à pourvoir dans notre filiale de cayenne,CORP,0,3000,JL-24,,,,,,
-JL-24,check le mediaflow...,CORP,0,6000,CV-13,,,,,,
-CV-13,naaaan !,CORP,1,,,1f628,JL-25,1f621,JL-25,1f922,JL-25
-JL-25,elle le mérite bien,CORP,0,,CV-14,,,,,,
-CV-14,mais elle pars en congé mater dans 3 mois !,CORP,1,,,1f92e,JL-26,1f616,JL-26,1f476,JL-27
-JL-26,elle a les compétences,CORP,0,,JL-27,,,,,,
-JL-27,personne n'est pas irremplacable,CORP,0,,JL-28,,,,,,
-JL-28,0148257542 : service des plans de retraite aménagé,CORP,0,,,,,,,,
+CV-12,Ok,CORP,1,,,263a,JL-19,1f927,JL-20,1F60E,JL-19
+JL-19,Cette task peut être un tremplin pour ton team,CORP,0,,JL-21,,,,,,
+JL-20,"Ca va laguer un peu, mais on est en search de nouveaux talents au service 4A",CORP,0,,JL-21,,,,,,
+JL-21,"Et franchement, stop now avec tes icones de weirdo",CORP,0,,CV-12,,,,,,
+CV-13,Ok,CORP,1,,,1f609,JL-22,,,,
+JL-22,"Putain, tu arrêtes ça now !",CORP,0,,JL-23,,,,,,
+JL-23,Y'a aussi des postes à pourvoir dans notre filiale de cayenne,CORP,0,3000,JL-24,,,,,,
+JL-24,Check le mediaflow...,CORP,0,6000,CV-13,,,,,,
+CV-14,comment ça !???,CORP,1,,,1f628,JL-25,1f621,JL-25,1f922,JL-25
+JL-25,Elle le mérite bien,CORP,0,,CV-14,,,,,,
+CV-15,Mais elle pars en congé mater dans 3 mois !,CORP,1,,,1f92e,JL-26,1f616,JL-26,1f476,JL-27
+JL-26,Elle a les compétences,CORP,0,2000,JL-27,,,,,,
+JL-27,Personne n'est pas irremplaçable,CORP,0,4000,JL-28,,,,,,
+JL-28,0148257542 : service des plans de retraite aménagé,CORP,0,5000,,,,,,,

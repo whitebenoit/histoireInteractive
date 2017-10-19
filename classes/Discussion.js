@@ -33,7 +33,7 @@ function Discussion(name,gameManager){
 			var currentDiscussion = this;
 
 			var msg_delay = MESSAGE_DELAY_DEFFAULT;
-			if (message.delay != undefined){
+			if (message.delay != undefined && message.delay != ""){
 				msg_delay = message.delay;
 			}
 			// If the message if from the player, no Waiting
@@ -42,6 +42,8 @@ function Discussion(name,gameManager){
 			}else{
 			// If the message is from the interlocuteur we wait
 				currentDiscussion.addWaitingMessage(chat_class);
+				var chatPipeline = currentDiscussion.locator.find(".chat_pipeline");
+				chatPipeline.scrollTop(chatPipeline[0].scrollHeight);
 			}
 
 			var delayTimeOut = setTimeout( function(){
@@ -56,6 +58,8 @@ function Discussion(name,gameManager){
 					myAudio = new Audio("sounds/"+currentDiscussion.audioMsgJoueur+".mp3");
 					myAudio.play();
 				}
+				var chatPipeline = currentDiscussion.locator.find(".chat_pipeline");
+				chatPipeline.scrollTop(chatPipeline[0].scrollHeight);
 				currentDiscussion.gameManager.fireNextElement(message.nextElement);
 			}, msg_delay);
 			
@@ -86,10 +90,9 @@ function Discussion(name,gameManager){
 			htmlDisc +='		 ';
 			htmlDisc +='	</div> ';
 			htmlDisc +='	<div class="chat_ans"> ';
-			htmlDisc +='		<div class="chat_ans_text"> ';
-			htmlDisc +='			 ';
-			htmlDisc +='		</div> ';
 			htmlDisc +='		<div class="chat_ans_emoji_choice"> ';
+			htmlDisc +='		</div> ';
+			htmlDisc +='		<div class="chat_ans_text"> ';
 			htmlDisc +='		</div> ';
 			htmlDisc +='	</div> ';
 			htmlDisc +='</div> ';

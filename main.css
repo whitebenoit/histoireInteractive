@@ -13,43 +13,60 @@ body{
 #chat_window{
 	width: 	700px;
 	margin:	auto;
-	background-color: #EEEEEE;
 	
 	
 }
 
 #chat_window > div {
-	display: 	inline-block;
+	/*display: 	inline-block;*/
 }
 
 
 /*
 	Discussion list Style
 */
-#chat_disc_list{;   
+#chat_disc_list{  
+	text-align:center;
     vertical-align:top;
+	margin:	auto;
     padding:10px 0;
 	width: 150px;
+	background-color: #EEEEEE;
+	width: 60%;
 }
 #chat_curr_disc{
+	margin:	auto;
+	background-color: #EEEEEE;
 	width: 60%;
+}
+
+#chat_curr_disc>.chat_discussion{
+	height: 600px;
+
 }
 
 
 #chat_disc_list > .chat_disc_list_element{
+	display:inline-block;
 	font-weight: bold;
 	color: white;
 	background-color: #D58E00;
 	padding:5px;
 	width:100px;
-	margin:auto;
+	margin:0 5px;
 }
 #chat_disc_list > .chat_disc_list_element >div{
+	display: inline-block; 
 	width: 50%;
 	text-align: center;
 	margin: auto;
 
 }
+#chat_disc_list > .chat_disc_list_element >.chat_disc_list_text {
+	width: 80%;
+}
+
+
 
 #chat_disc_list > .chat_disc_list_element >div>img{
 	display:block;
@@ -68,7 +85,7 @@ body{
 
 
 .chat_emoji_IMG{
-	height: 2em;
+	height: 1.1em;
 }
 
 .chat_emoji_button_IMG{
@@ -80,18 +97,44 @@ body{
 	Answers of the player Style
 */
 .chat_ans{
-	background-color: rgba(255,255,255,0.78);
-	min-height: 40px;
+	height: 18%;
 }
 .chat_ans > div {
-	display: 	inline-block;
+	width:90%;
+	/*display: 	inline-block;*/
+}
+.chat_ans > .chat_ans_text{
+	background-color: rgba(255,255,255,0.78);
+	margin: auto;
+	padding: 2px;
+	min-height: 40px;
+
 }
 
 .chat_ans_emoji_choice{
-	float: right;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	height:60px;
+	/*float: right;*/
 }
 .chat_ans_emoji_choice>button{
-	
+	animation-name: chat_element;
+	animation-duration: 0.4s;
+	background-color: rgba(255,255,255,0.78);
+	border:none;
+	margin: 0 2px;
+	width:60px;
+	height:60px;
+}
+.chat_ans_emoji_choice>button img{
+	transition: filter 0.2s;
+}
+.chat_ans_emoji_choice>button:hover img{
+	filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));
+	-webkit-filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));
+	/*box-shadow: 0px 0px 15px 0px rgba(242,211,9,1);*/
 }
 
 /*
@@ -101,11 +144,13 @@ body{
 .chat_discussion{
 	min-width: 70%;
 	width: auto;
+	padding: 5px;
 
 }
 
 .chat_pipeline{
 	overflow: auto;
+	height:82%;
 }
 
 .chat_pipeline_answer, .chat_pipeline_message{

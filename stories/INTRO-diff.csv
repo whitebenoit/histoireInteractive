@@ -1,0 +1,16 @@
+Mum-01,"Bonjour mon cœur, ça va bien ?",INTRO,0,,Play-01,,,,,,
+Play-01,Yep ! Ça va ça va,INTRO,1,,,1f601,Mum-02,1f61c,Mum-02,1f615,Mum-02
+Mum-02,t'es occupé là ?,INTRO,0,3000,Play-03,,,,,,
+Play-03,"Oui, un peu...",INTRO,1,,,1f635,Mum-03,1f62d,Mum-03,1f61c,Mum-03
+Mum-03,J'arrive pas à aller sur Gogol,INTRO,0,,Mum-04,,,,,,
+Mum-04,GOOGLE !,INTRO,0,,Mum-05,,,,,,
+Mum-05,"Je fais comment, déjà ?",INTRO,0,,Play-04,,,,,,
+Play-04,"Ah, oui.... quand même",INTRO,1,,,1f61c,Mum-06,1f636,Mum-06,1f913,Mum-06
+Mum-06,S'il te plait... je dois faire la commande pour couleur,INTRO,0,,Mum-07,,,,,,
+Mum-07,COLETTE ! Saleté de télepathie,INTRO,0,,Play-05,,,,,,
+Play-05,Whaaat ?,INTRO,1,,,1f640,Mum-08,1f47b,Mum-08,1f921,Mum-08
+Mum-08,La redoute !,INTRO,0,,Play-06,,,,,,
+Play-06,Ok... je vois ça peut être demain,INTRO,1,,,1f916,Mum-11,1f607,Mum-09,1f920,Mum-10
+Mum-09,"Merci, je t'aime",INTRO,0,,Girl intro,,,,,,
+Mum-10,"Merci, je t'aime mon trésor !",INTRO,0,,Voleur intro,,,,,,
+Mum-11,"Merci, qu'est ce que je ferai sans toi !",INTRO,0,,SEC-01,,,,,,
