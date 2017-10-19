@@ -229,41 +229,47 @@ function GameManager(){
 
 	this.fireNextElement = function(name){
 
+		if(name == "FIN"){
 
-		// Get the message that is next
-		var message = this.getMessageByNameAnyDiscussion(name);
-			// If message is not in any discution, we check the message list
-		if (message == null){
-			var lst_message = this.getMessageByNameFromList()
-			if (lst_message != null){
-				message = lst_message;
-			}
-		}
-			// If message don't exist, we create the object Message from the JSON
-		if(message == null){
-			var message = this.createMessageObjectFromJSONByName(name);
-			this.listAllMessage.push(message);
-		}
+		$("#chat_window").addClass('hidden');
+		$("#ls_all").removeClass('hidden');
 
-		// Now if we have a message
-		if(message !=null){
-			// We check if the discussion of the message exist
-			if(!this.isDiscussionByNameExist(message.discussion)){
-				//If it doesn't exist, we create it
-				this.createDiscussion(message.discussion);
-			}
-
-
-			// Depending on the type of the message, add a new answer choice 
-			// or post a new message in the chat
-			if(message.type == MSG_TYPE_JOUEUR){
-				this.addNewAnswerChoice(this.getDiscussionByName(message.discussion),message);
-			} else if (message.type == MSG_TYPE_INTERLOCUTEUR){
-				this.postMessageIntoChat(this.getDiscussionByName(message.discussion),message);
-				// this.fireNextElement(message.nextElement);
-			}
 		}else{
-			console.log("ERR - fireNextElement(): message == null");
+			// Get the message that is next
+			var message = this.getMessageByNameAnyDiscussion(name);
+				// If message is not in any discution, we check the message list
+			if (message == null){
+				var lst_message = this.getMessageByNameFromList()
+				if (lst_message != null){
+					message = lst_message;
+				}
+			}
+				// If message don't exist, we create the object Message from the JSON
+			if(message == null){
+				var message = this.createMessageObjectFromJSONByName(name);
+				this.listAllMessage.push(message);
+			}
+
+			// Now if we have a message
+			if(message !=null){
+				// We check if the discussion of the message exist
+				if(!this.isDiscussionByNameExist(message.discussion)){
+					//If it doesn't exist, we create it
+					this.createDiscussion(message.discussion);
+				}
+
+
+				// Depending on the type of the message, add a new answer choice 
+				// or post a new message in the chat
+				if(message.type == MSG_TYPE_JOUEUR){
+					this.addNewAnswerChoice(this.getDiscussionByName(message.discussion),message);
+				} else if (message.type == MSG_TYPE_INTERLOCUTEUR){
+					this.postMessageIntoChat(this.getDiscussionByName(message.discussion),message);
+					// this.fireNextElement(message.nextElement);
+				}
+			}else{
+				console.log("ERR - fireNextElement(): message == null");
+			}
 		}
 	}
 

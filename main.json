@@ -41,7 +41,7 @@
 	},
 
     "Girl":{
-        "text"      :   "Régis",
+        "text"      :   "Lili",
         "portrait"  :   "",
         "background":   "",
         "audioMsgInterlocuteur" : "Freesound-352651",
@@ -202,7 +202,7 @@
     "content":    "Bonjour mon cœur, ça va bien ?",
     "discussion": "INTRO",
     "type":       "0",
-    "delay":      "",
+    "delay":      "0",
     "nextElement":"Play-01"
 },
 "Play-01":{
@@ -711,7 +711,7 @@
     "discussion": "CORP",
     "type":       "0",
     "delay":      "5000",
-    "nextElement":""
+    "nextElement":"FIN"
 },
 
 
@@ -1389,7 +1389,7 @@
     "discussion": "Voleur",
     "type":       "0",
     "delay":      "500",
-    "nextElement":"FIN 1"
+    "nextElement":"FIN"
 },
 "Flic mort 7":{
     "content":    "Non, mec. J'essaie de nous protéger",
@@ -1844,7 +1844,7 @@
     "discussion": "Voleur",
     "type":       "0",
     "delay":      "500",
-    "nextElement":"FIN 2"
+    "nextElement":"FIN"
 },
 "Radine 16":{
     "content":    "Elle a fini… Eh ben…",
@@ -1886,9 +1886,9 @@
     "discussion": "Voleur",
     "type":       "1",
     "choices":{ 
-        "1F624":"FIN 3",
-        "1F60E":"FIN 3",
-        "1F601":"FIN 3"
+        "1F624":"FIN",
+        "1F60E":"FIN",
+        "1F601":"FIN"
     }
 },
 "FM Intérieur 13":{
@@ -2280,7 +2280,7 @@
     "discussion": "Voleur",
     "type":       "0",
     "delay":      "2000",
-    "nextElement":"FIN 4"
+    "nextElement":"FIN"
 },
 "FM Radine morte 14":{
     "content":    "On n'a pas le temps pour ça",
@@ -2315,7 +2315,7 @@
     "discussion": "Voleur",
     "type":       "0",
     "delay":      "",
-    "nextElement":"FIN 5"
+    "nextElement":"FIN"
 },
 "FM Radine 16":{
     "content":    "Elle a fini… Eh ben…",
@@ -2458,8 +2458,9 @@
     "discussion": "Voleur",
     "type":       "0",
     "delay":      "500",
-    "nextElement":"FIN 6"
+    "nextElement":"FIN"
 },
+
 
 
 
@@ -2510,7 +2511,7 @@
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Réponse DS0"
 },
 "Réponse DS0":{
     "content":    "Toujours sur le DS de math",
@@ -2916,35 +2917,35 @@
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 18"
 },
 "Professeur 18":{
     "content":    "Quand il arrive, ses chemises sont déjà toutes mouillées",
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 19"
 },
 "Professeur 19":{
     "content":    "Il est pro de concours de T-shirt mouillé",
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 20"
 },
 "Professeur 20":{
     "content":    "En parlant de fringues",
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 21"
 },
 "Professeur 21":{
     "content":    "Tu as vu comment il se sappe ?",
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 22"
 },
 "Professeur 22":{
     "content":    " ",
@@ -2996,7 +2997,7 @@
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Professeur 25.5"
 },
 "Professeur 25.5":{
     "content":    "Putain, t'es vache",
@@ -3554,13 +3555,16 @@
     "discussion": "Girl",
     "type":       "0",
     "delay":      "",
-    "nextElement":""
+    "nextElement":"Amour 22.1.2.12"
 },
-"FIN":{
+"Amour 22.1.2.12":{
     "content":    "…",
     "discussion": "",
     "type":       "1",
     "choices":{ 
+        "1F614":"FIN",
+        "1F622":"FIN",
+        "1F925":"FIN"
     }
 }
 }

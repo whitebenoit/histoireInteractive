@@ -7,7 +7,26 @@
 	<body>
 	
 		<div id="all">
-			<div id="chat_window">
+			<div id="fs_all">
+				<div id='fs_empty'>
+				</div>
+				<div id="fs_slideContainer">
+					<button id="fs_but" onclick="buttonAddClass()">
+						<div id="fs_arrow">
+
+						</div>
+					</button>
+				</div>
+			</div>
+
+			<div id="ls_all" class="hidden">
+				<div id='ls_empty'>
+				</div>
+				<button id="ls_but" onclick="reloadPage()">
+					Recommencer
+				</button>
+			</div>
+			<div id="chat_window" class="hidden">
 				<div id="chat_disc_list">
 				</div>
 				<div id="chat_curr_disc">
