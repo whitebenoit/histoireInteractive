@@ -155,7 +155,8 @@ LAST SCREEN STYLE
 	background: url('images/Bandeau-bottom.png') no-repeat center;
 	background-size: cover;
 	width: 60%;
-}
+}  
+
 #chat_curr_disc{
 	margin:	auto;
 	background-color: #EEEEEE;
