@@ -253,7 +253,7 @@
     }
 },
 "JL-19":{
-    "content":    "Cette task peut être un tremplin pour ton team",
+    "content":    "Cette task peut être un tremplin pour ta team",
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
@@ -271,7 +271,7 @@
     "discussion": "CORP",
     "type":       "0",
     "delay":      "",
-    "nextElement":"CV-12"
+    "nextElement":"CV-13"
 },
 "CV-13":{
     "content":    "Ok",
@@ -300,7 +300,7 @@
     "discussion": "CORP",
     "type":       "0",
     "delay":      "6000",
-    "nextElement":"CV-13"
+    "nextElement":"CV-14"
 },
 "CV-14":{
     "content":    "comment ça !???",
@@ -316,8 +316,8 @@
     "content":    "Elle le mérite bien",
     "discussion": "CORP",
     "type":       "0",
-    "delay":      "",
-    "nextElement":"CV-14"
+    "delay":      "4000",
+    "nextElement":"CV-15"
 },
 "CV-15":{
     "content":    "Mais elle pars en congé mater dans 3 mois !",
@@ -349,4 +349,28 @@
     "type":       "0",
     "delay":      "5000",
     "nextElement":""
+},
+"SEC-01":{
+    "content":    "Report du meeting de demain",
+    "discussion": "CORP",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"CV-01"
+},
+"CV-01":{
+    "content":    "Cher JL, à quand voulez vous reporter le meeting ?",
+    "discussion": "CORP",
+    "type":       "1",
+    "choices":{ 
+        "1f643":"JL-01",
+        "1f603":"JL-01",
+        "1F60E":"JL-01"
+    }
+},
+"JL-01":{
+    "content":    "Check le mediaflow",
+    "discussion": "CORP",
+    "type":       "0",
+    "delay":      "3500",
+    "nextElement":"CV-02"
 }

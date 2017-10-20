@@ -4,6 +4,7 @@ var locChatPipeline = $("chat_pipeline");
 
 function buttonAddClass() {
 	$("#fs_but").addClass('fs_transitionButton');
+	$("#fs_textSlide").addClass('hidden');
 	var delayTimeOut = setTimeout( function(){
 		$("#fs_all").addClass('hidden');
 		$("#chat_window").removeClass('hidden');

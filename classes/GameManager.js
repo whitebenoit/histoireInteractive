@@ -47,9 +47,10 @@ function GameManager(){
 			var newDiscussion = discussionName;
 
 			// Remove previous if it exist
-			if (oldDiscussion !=undefined) {
+			if (oldDiscussion !=undefined && oldDiscussion != newDiscussion) {
 				// Remove the class from the previous current discussion in the list
 				$("#chat_disc_list").find('#'+oldDiscussion+'_list_element').removeClass('chat_disc_list_element_current');
+				$("#chat_disc_list").find('#'+oldDiscussion+'_list_element').addClass('hidden');
 				// Add the hidden class
 				$("#chat_window>#chat_curr_disc").find('#'+oldDiscussion).addClass('hidden');
 			}	

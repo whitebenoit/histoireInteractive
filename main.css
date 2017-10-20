@@ -5,7 +5,7 @@ body{
 }
 
 .hidden {
-	display: none;
+	display: none!important;
 }
 
 /* 
@@ -24,7 +24,14 @@ FIRST SCREEN STYLE
 #fs_empty{
 	width: 	100%;
 	height: 80%;
-
+}
+#fs_logo{
+	position: relative;
+	width:250px;
+	height:250px;
+	top:30%;
+	display:block;
+    margin:auto;
 }
 
 #fs_slideContainer{
@@ -37,6 +44,8 @@ FIRST SCREEN STYLE
 }
 
 #fs_but{
+	z-index:5;
+
 	width: 	50px;
 	height: 50px;
 	position:absolute;
@@ -44,8 +53,8 @@ FIRST SCREEN STYLE
     transition: right 0.5s ease-in-out;
 }
 
-.fs_transitionButton{
-    right: 0!important;
+.fs_transitionButton{    
+	right: 0!important;
 }
 #fs_arrow{
 	content:"";
@@ -59,6 +68,30 @@ FIRST SCREEN STYLE
 	border-top: 15px solid transparent;
 	border-left: 30px solid #AAA;
 	border-bottom: 15px solid transparent;
+}
+
+#fs_textSlide{
+	font-weight: bold;
+	position:absolute;
+	right:15%;
+	top:25%;
+	z-index:3;
+	animation: flashingText 3s infinite;
+	
+}
+@keyframes flashingText {
+    0% {
+    	color:black;
+    }
+    40% {
+    	color:white;
+    }
+    60% {
+    	color:white;
+    }
+    100% {
+    	color:black;
+    }
 }
 
 
@@ -83,11 +116,22 @@ LAST SCREEN STYLE
 	height: 50px;
     margin:0 auto;
     display:block;
-	border:0px transparent;
-	background-color: #008080;
+	background: url('images/Button-reload.png')  center;
+	border:0px;
+	border-radius: 2px;
 	color: white;
+	font-weight: bold;
 	font-size: 150%;
+	transition: filter 0.2s;
 }
+	
+#ls_but:hover{
+	filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
+}
+	/*border:0px transparent;
+	background-color: #008080;
+
+
 
 
 #chat_window{
@@ -107,9 +151,10 @@ LAST SCREEN STYLE
 	text-align:center;
     vertical-align:top;
 	margin:	auto;
-    padding:10px 0;
+    padding:5px 0;
 	width: 150px;
-	background-color: #EEEEEE;
+	background: url('images/Bandeau-bottom.png') no-repeat center;
+	background-size: cover;
 	width: 60%;
 }
 #chat_curr_disc{
@@ -131,35 +176,37 @@ LAST SCREEN STYLE
 	display:inline-block;
 	font-weight: bold;
 	color: white;
-	background-color: #D58E00;
-	padding:5px;
+	/*background-color: #D58E00;*/
+	padding:0px;
 	width:100px;
 	margin:0 5px;
 }
 #chat_disc_list > .chat_disc_list_element >div{
 	display: inline-block; 
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	margin: auto;
 
 }
 #chat_disc_list > .chat_disc_list_element >.chat_disc_list_text {
-	width: 80%;
+	width: 100%;
 }
 
 
 
 #chat_disc_list > .chat_disc_list_element >div>img{
 	display:block;
-	width:70%;
+	width:60%;
 	height: auto;
 	margin: auto;
 	border-radius:50%;
+	border: 2px solid white;
 }
 
 
 #chat_disc_list > .chat_disc_list_element_current{
-	background-color: #D50000;
+	/*background-color: #D50000;*/
+
 }
 
 
@@ -185,7 +232,13 @@ LAST SCREEN STYLE
 	/*display: 	inline-block;*/
 }
 .chat_ans > .chat_ans_text{
-	background-color: rgba(255,255,255,0.78);
+	/*background-color: rgba(255,255,255,0.78);*/
+	background-color: rgba(55,140,78,0.78);
+	border: 2px solid white;
+    box-shadow: 2px 2px 3px -2px #555555;
+	color:white;
+	font-weight: bold;
+	text-align:center;
 	margin: auto;
 	padding: 2px;
 	min-height: 40px;
@@ -196,15 +249,18 @@ LAST SCREEN STYLE
 	margin:auto;
 	display: flex;
 	align-items: center;
-	justify-content: right;
+	justify-content: center;
 	height:60px;
 	/*float: right;*/
 }
 .chat_ans_emoji_choice>button{
 	animation-name: chat_element;
+	background-color: rgba(55,140,78,0.78);
+	border: 2px solid white;
+    box-shadow: 2px 2px 3px -2px #555555;
+	color:white;
+	font-weight: bold;
 	animation-duration: 0.4s;
-	background-color: rgba(255,255,255,0.78);
-	border:none;
 	margin: 0 2px;
 	width:60px;
 	height:60px;
@@ -213,8 +269,10 @@ LAST SCREEN STYLE
 	transition: filter 0.2s;
 }
 .chat_ans_emoji_choice>button:hover img{
-	filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));
-	-webkit-filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));
+	filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
+	-webkit-filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
+	/*filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));*/
+	/*-webkit-filter: drop-shadow(0px 0px 8px rgb(11, 181, 255));*/
 	/*box-shadow: 0px 0px 15px 0px rgba(242,211,9,1);*/
 }
 
@@ -251,7 +309,7 @@ LAST SCREEN STYLE
 	float:right;
 	clear: both;
 	/*border: 1px solid darkgreen;*/
-	background-color: #19bc19;
+	background-color: rgba(55,140,78,1);
 	margin-right:20px;
 }
 .chat_pipeline_answer:before { 
@@ -263,7 +321,7 @@ LAST SCREEN STYLE
 	bottom: 9.5px;
 	width: 0;
 	height: 0;
-	border-bottom: 15px solid #19bc19;
+	border-bottom: 15px solid rgba(55,140,78,1);
 	border-right: 15px solid transparent;
 }
 

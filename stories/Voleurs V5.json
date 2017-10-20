@@ -1,0 +1,1728 @@
+
+"Nom message":{
+    "content":    "content",
+    "discussion": "discussion",
+    "type":       "type (0= interlo, 1 = joueur)",
+},
+"Voleur intro":{
+    "content":    "Alors ? Tu en es o— ? T'as avanc‚ ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F616":"Voleur intro 1",
+        "1F628":"Voleur intro 1",
+        "1F61F":"Voleur intro 1"
+    }
+},
+"Voleur intro 1":{
+    "content":    "Tkt, mec. Je gŠre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Voleur intro 2"
+},
+"Voleur intro 2":{
+    "content":    "Je suis devant la porte",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Voleur intro 3"
+},
+"Voleur intro 3":{
+    "content":    "La serrure me r‚siste. Je vais faire un peu de bruit... Garde les cl‚s sur le contact. OK ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Voleur intro 4"
+},
+"Voleur intro 4":{
+    "content":    "Merde ‡a craint",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F620":"Int‚rieur 1",
+        "1F631":"Voleur intro 5",
+        "1F61E":"Int‚rieur 1"
+    }
+},
+"Voleur intro 5":{
+    "content":    "Tkt, mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2500",
+    "nextElement":"Int‚rieur 1"
+},
+"Int‚rieur 1":{
+    "content":    "Done",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1500",
+    "nextElement":"Int‚rieur 2"
+},
+"Int‚rieur 2":{
+    "content":    "C'‚tait facile. Serrure de merde",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 3"
+},
+"Int‚rieur 3":{
+    "content":    "Pas d'alarme",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 4"
+},
+"Int‚rieur 4":{
+    "content":    "T'avais raison",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 5"
+},
+"Int‚rieur 5":{
+    "content":    "C'est vraiment pas s‚curis‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 1"
+},
+"Radine 1":{
+    "content":    "Ouais. Cette pute a toujours ‚t‚ radine",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F621":"Radine 2",
+        "1F609":"Radine 3",
+        "1F62B":"Radine 4"
+    }
+},
+"Radine 2":{
+    "content":    "La haine !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 2.1"
+},
+"Radine 2.1":{
+    "content":    "Hahaha, la conne !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 2.2"
+},
+"Radine 2.2":{
+    "content":    "Elle aurait mieux fait de pas te virer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 5"
+},
+"Radine 3":{
+    "content":    "Tu connais vraiment ton sujet",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 3.1"
+},
+"Radine 3.1":{
+    "content":    "XD",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 3.2"
+},
+"Radine 3.2":{
+    "content":    "Elle aurait mieux fait de pas te virer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 5"
+},
+"Radine 4":{
+    "content":    "Elle a pas ‚t‚ tendre avec toi, hein ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 4.1"
+},
+"Radine 4.1":{
+    "content":    "Elle va payer, ce soir",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 5"
+},
+"Radine 5":{
+    "content":    "Yes !!!",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F608":"Radine 5.1",
+        "1F604":"Int‚rieur 6",
+        "1F911":"Radine 5.3"
+    }
+},
+"Radine 5.1":{
+    "content":    "On va la ruiner !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 6"
+},
+"Radine 5.3":{
+    "content":    "A nous ses bijoux et sa fortune",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 6"
+},
+"Int‚rieur 6":{
+    "content":    "La proprio dort",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 7"
+},
+"Int‚rieur 7":{
+    "content":    "‡a sent la vieille?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Int‚rieur 8"
+},
+"Int‚rieur 8":{
+    "content":    "Et le cassoulet",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1500",
+    "nextElement":"Int‚rieur 9"
+},
+"Int‚rieur 9":{
+    "content":    "Beurk?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F922":"Int‚rieur 9.1",
+        "1F4A9":"Int‚rieur 9.1",
+        "1F92E":"Int‚rieur 9.1"
+    }
+},
+"Int‚rieur 9.1":{
+    "content":    "Hahahha ! Stop? Faut pas que je me marre ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 10"
+},
+"Int‚rieur 10":{
+    "content":    "Je vais … l'‚tage. Choper les bijoux.",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 11"
+},
+"Int‚rieur 11":{
+    "content":    "Comme tu avais dit",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 12"
+},
+"Int‚rieur 12":{
+    "content":    "J'y suis",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 1"
+},
+"Flic 1":{
+    "content":    "Attends !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1500",
+    "nextElement":"Flic 2"
+},
+"Flic 2":{
+    "content":    "Y a de la lumiŠre dans la rue",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "800",
+    "nextElement":"Flic 3"
+},
+"Flic 3":{
+    "content":    "Putain",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Flic 4"
+},
+"Flic 4":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "600",
+    "nextElement":"Flic 5"
+},
+"Flic 5":{
+    "content":    "Y a un flic",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 6"
+},
+"Flic 6":{
+    "content":    "Il arrive vers toi",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7"
+},
+"Flic 7":{
+    "content":    "Putain ! Je fais quoi ? Je fais quoi putain ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F631":"Flic 7.1",
+        "1F616":"Flic 7.1",
+        "1F914":"Flic 7.1"
+    }
+},
+"Flic 7.1":{
+    "content":    "Gardes ton calme !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.2"
+},
+"Flic 7.2":{
+    "content":    "Le flic va te flairer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.3"
+},
+"Flic 7.3":{
+    "content":    "Tu restes calme",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.3.1"
+},
+"Flic 7.3.1":{
+    "content":    "OK ? ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.4"
+},
+"Flic 7.4":{
+    "content":    "Tu peux faire ‡a ? ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.5"
+},
+"Flic 7.5":{
+    "content":    "Ouais? C'est ‡a? ouais",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F635":"Flic 7.5.1",
+        "1F630":"Flic 7.5.1",
+        "1F60E":"Flic 7.6"
+    }
+},
+"Flic 7.5.1":{
+    "content":    "Fuck mec?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 7.5.2"
+},
+"Flic 7.5.2":{
+    "content":    "Il t'as vu",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1300",
+    "nextElement":"Flic 7.5.3"
+},
+"Flic 7.5.3":{
+    "content":    "Kes tu fous ?!",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1200",
+    "nextElement":"Flic 7.5.4"
+},
+"Flic 7.5.4":{
+    "content":    "K‚vin !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1100",
+    "nextElement":"Flic 7.5.5"
+},
+"Flic 7.5.5":{
+    "content":    "R‚ponds !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1000",
+    "nextElement":"Flic 7.5.6"
+},
+"Flic 7.5.6":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "900",
+    "nextElement":"Flic 7.5.7"
+},
+"Flic 7.5.7":{
+    "content":    "Fais kek chose",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "900",
+    "nextElement":"Flic 7.5.8"
+},
+"Flic 7.5.8":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "800",
+    "nextElement":"Flic 7.5.9"
+},
+"Flic 7.5.9":{
+    "content":    "Barre-toi",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Flic 7.5.10"
+},
+"Flic 7.5.10":{
+    "content":    "D‚marre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "600",
+    "nextElement":"Flic 7.5.11"
+},
+"Flic 7.5.11":{
+    "content":    "Me fais pas rep‚rer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Flic 7.5.12"
+},
+"Flic 7.5.12":{
+    "content":    "Non ! Putain",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"Flic 7.5.13"
+},
+"Flic 7.5.13":{
+    "content":    "Tu l'as renvers‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Flic mort"
+},
+"Flic mort 1":{
+    "content":    "J'ai paniqu‚. Putain. Je suis pas comme toi. Il a la jambe toute tordue maintenant. Il bouge plus du tout. Putain ! Je sors pas de prison moi !!!",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F62D":"Flic mort 2",
+        "1F635":"Flic mort 2",
+        "1F621":"Flic mort 3"
+    }
+},
+"Flic mort 2":{
+    "content":    "Fuck mais t'es con ! ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.1"
+},
+"Flic mort 2.1":{
+    "content":    "?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"Flic mort 2.2"
+},
+"Flic mort 2.2":{
+    "content":    "Bon calme toi?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.3"
+},
+"Flic mort 2.3":{
+    "content":    "Le flic a l'air mort.",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.4"
+},
+"Flic mort 2.4":{
+    "content":    "Tu as fait du bruit mais je vois personne aux f‚nˆtres?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.5"
+},
+"Flic mort 2.5":{
+    "content":    "Mˆme la proprio dort encore?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.6"
+},
+"Flic mort 2.6":{
+    "content":    "On peut continuer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.7"
+},
+"Flic mort 2.7":{
+    "content":    "Fous le corps dans le coffre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.8"
+},
+"Flic mort 2.8":{
+    "content":    "Vite",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 2.9"
+},
+"Flic mort 2.9":{
+    "content":    "Tu te fous de moi ? Je peux pas faire ‡a !",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F635":"Flic Mort 5",
+        "1F62D":"Flic Mort 5",
+        "":"Trahison 1"
+    }
+},
+"Flic mort 3":{
+    "content":    "Je sors peut-ˆtre de prison mais je sais ce que je fais, connard",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 4"
+},
+"Flic mort 4":{
+    "content":    "Si tu veux pas y finir toi aussi, tu fais ce que je dis !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 6"
+},
+"Flic mort 5":{
+    "content":    "Ecoute, je sais ce que je fais, si tu veux pas finir en prison, tu fais ce que je dis",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 6"
+},
+"Flic mort 6":{
+    "content":    "Tu me menaces ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F627":"Flic mort 7",
+        "1F621":"Trahison 1",
+        " ":"Trahison 1"
+    }
+},
+"Trahison 1":{
+    "content":    "Ouais. Je suis dangereux mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Trahison 2"
+},
+"Trahison 2":{
+    "content":    "Tu ferais mieux de m'‚couter",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Trahison 3"
+},
+"Trahison 3":{
+    "content":    "Sinon?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Trahison 4"
+},
+"Trahison 4":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Trahison 5"
+},
+"Trahison 5":{
+    "content":    "Mais stop",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1000",
+    "nextElement":"Trahison 6"
+},
+"Trahison 6":{
+    "content":    "Stop le klaxon",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1000",
+    "nextElement":"Trahison 7"
+},
+"Trahison 7":{
+    "content":    "Tu vas r‚veiller tout le monde",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1000",
+    "nextElement":"Trahison 8"
+},
+"Trahison 8":{
+    "content":    "K‚vin !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "800",
+    "nextElement":"Trahison 9"
+},
+"Trahison 9":{
+    "content":    "Fuck !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Trahison 10"
+},
+"Trahison 10":{
+    "content":    "Reviens !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "600",
+    "nextElement":"Trahison 11"
+},
+"Trahison 11":{
+    "content":    "Enfoir‚ !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Trahison 12"
+},
+"Trahison 12":{
+    "content":    "Connard !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Trahison 13"
+},
+"Trahison 13":{
+    "content":    "Je te retrouverai",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Trahison 14"
+},
+"Trahison 14":{
+    "content":    "Et je te tuerai connard",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Trahison 15"
+},
+"Trahison 15":{
+    "content":    "Je tuerai ta mŠre aussi",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Trahison 16"
+},
+"Trahison 16":{
+    "content":    "Reviens !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Trahison 17"
+},
+"Trahison 17":{
+    "content":    "Kevin !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FIN"
+},
+"Flic mort 7":{
+    "content":    "Non, mec. J'essaie de nous prot‚ger",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 8"
+},
+"Flic mort 8":{
+    "content":    "Fous le corps dans le coffre et fait le tour du pat‚ de maisons. OK ? ",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F630":"Flic mort 8.1",
+        "1F92F":"Flic mort 8.2",
+        "":"Flic mort 8.1"
+    }
+},
+"Flic mort 8.1":{
+    "content":    "C'est fait? Putain? J'ai tu‚ un flic, R‚gis",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 9"
+},
+"Flic mort 8.2":{
+    "content":    "Ouais t'es un vrai  maintenant, comme moi",
+    "discussion": "",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 9"
+},
+"Flic mort 9":{
+    "content":    "Je sais, mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 10"
+},
+"Flic mort 10":{
+    "content":    "C'est rude",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 11"
+},
+"Flic mort 11":{
+    "content":    "On va voler les bijoux de la vieille et les utiliser pour disaparaŒtre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 12"
+},
+"Flic mort 12":{
+    "content":    "OK ?!",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic mort 13"
+},
+"Flic mort 13":{
+    "content":    "Ouais",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F624":"Flic mort 14",
+        "1F629":"Flic mort 14",
+        " ":"Flic mort 14"
+    }
+},
+"Flic mort 14":{
+    "content":    "‡a c'est mon pote",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 13"
+},
+"Flic 7.6":{
+    "content":    "Mec. T'as g‚r‚.",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 7.7"
+},
+"Flic 7.7":{
+    "content":    "Il a rien capt‚, le flic",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 7.8"
+},
+"Flic 7.8":{
+    "content":    "Nice !  ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 7.9"
+},
+"Flic 7.9":{
+    "content":    "Putain? J'ai eu chaud",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F624":"Flic 8.1",
+        "1F60E":"Flic 8.2",
+        "1F625":"Flic 8.1"
+    }
+},
+"Flic 8.1":{
+    "content":    "La pression ! T'as d‚chir‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 8.2"
+},
+"Flic 8.2":{
+    "content":    "Quel jeu d'acteur",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Flic 9"
+},
+"Flic 9":{
+    "content":    "Il est parti?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 13"
+},
+"Int‚rieur 13":{
+    "content":    "Bon? Je monte … l'‚tage",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 14"
+},
+"Int‚rieur 14":{
+    "content":    "Je suis dans la chambre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 15"
+},
+"Int‚rieur 15":{
+    "content":    "J'ai trouv‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 16"
+},
+"Int‚rieur 16":{
+    "content":    "Juste l… o— tu avais dit",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 17"
+},
+"Int‚rieur 17":{
+    "content":    "Wow? Le pactole?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 18"
+},
+"Int‚rieur 18":{
+    "content":    "Y a mˆme des diamants",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Int‚rieur 19"
+},
+"Int‚rieur 19":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Int‚rieur 21"
+},
+"Int‚rieur 21":{
+    "content":    "Putain ! Ouais ! Told ya !",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F61D":"Int‚rieur 22",
+        "1F911":"Int‚rieur 22",
+        "1F60C":"Int‚rieur 22"
+    }
+},
+"Int‚rieur 22":{
+    "content":    "Yep ! Trop bon le plan",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 6"
+},
+"Radine 6":{
+    "content":    "Fuck !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 7"
+},
+"Radine 7":{
+    "content":    "Quoi ?! Qu'est-ce qui se passe ? La lumiŠre … l'‚tage s'est alum‚e",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F632":"Radine 8",
+        "1F62C":"Radine 8",
+        "1F631":"Radine 8"
+    }
+},
+"Radine 8":{
+    "content":    "La m‚m‚ est r‚veill‚e",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"Radine 9"
+},
+"Radine 9":{
+    "content":    "Je suis cach‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 10"
+},
+"Radine 10":{
+    "content":    "Elle va aux toilettes",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 11"
+},
+"Radine 11":{
+    "content":    "Fuck !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Radine 12"
+},
+"Radine 12":{
+    "content":    "Elle fait un de ces boucans XD",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"Radine 13"
+},
+"Radine 13":{
+    "content":    "C'est … cause du cassoulet",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F602":"Radine 14",
+        "1F922":"Radine 14",
+        "1F606":"Radine 14"
+    }
+},
+"Radine 14":{
+    "content":    "Stop. Fuck. Tu va me faire rire",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 15"
+},
+"Radine 15":{
+    "content":    "Chut",
+    "discussion": "",
+    "type":       "1",
+    "choices":{ 
+        "1F92B":"Radine 16",
+        " ":"Radine 16",
+        "1F92D":"Radine 15.1"
+    }
+},
+"Radine 15.1":{
+    "content":    "Profite de ce merveilleux moment",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F92A":"Radine morte 1",
+        "1F643":"Radine morte 1",
+        "1F4A9":"Radine morte 1"
+    }
+},
+"Radine morte 1":{
+    "content":    "Quel veinard. Des diamands et une grosse qui chie … c“t‚",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F608":"Radine morte 2",
+        "1F60B":"Radine morte 2",
+        "1F606":"Radine morte 2"
+    }
+},
+"Radine morte 2":{
+    "content":    "Tu sais quoi faire dans ces situations, non ?",
+    "discussion": "",
+    "type":       "1",
+    "choices":{ 
+        "1F449":"Radine morte 2.1",
+        "1F351":"Radine morte 2.1",
+        "1F346":"Radine morte 2.1"
+    }
+},
+"Radine morte 2.1":{
+    "content":    "Raconte",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F923":"Radine morte 2.2",
+        "1F606":"Radine morte 2.2",
+        "1F602":"Radine morte 2.2"
+    }
+},
+"Radine morte 2.2":{
+    "content":    "Putain ! R‚gis ? C'‚tait quoi ce bruit ! Qu'est-ce qui se passe bordel ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F631":"Radine morte 3",
+        "1F627":"Radine morte 3",
+        "1F602":"Radine morte 3"
+    }
+},
+"Radine morte 3":{
+    "content":    "R‚gis ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F603":"Radine morte 4",
+        "1F604":"Radine morte 4",
+        "2753":"Radine morte 4"
+    }
+},
+"Radine morte 4":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"Radine morte 5"
+},
+"Radine morte 5":{
+    "content":    "Je crois qu'elle est morte",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"Radine morte 6"
+},
+"Radine morte 6":{
+    "content":    "Tu m'as fait rire",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"Radine morte 7"
+},
+"Radine morte 7":{
+    "content":    "Elle a eu peur? Et puis",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Radine morte 8"
+},
+"Radine morte 8":{
+    "content":    "Elle est tomb‚e dans les escaliers",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Radine morte 9"
+},
+"Radine morte 9":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Radine morte 10"
+},
+"Radine morte 10":{
+    "content":    "Quelle conne !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"Radine morte 11"
+},
+"Radine morte 11":{
+    "content":    "Putain ! Tu d‚connes ? Tu te fous de ma gueule ? T'es pas bien, mec",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F628":"Radione morte 11.1",
+        "1F92A":"Radione morte 11.2",
+        "":"Radione morte 11.3"
+    }
+},
+"Radione morte 11.1":{
+    "content":    "C'est pas une blague",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine morte 13"
+},
+"Radione morte 11.2":{
+    "content":    "Non  ! Je suis s‚rieux bordel connard",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "100",
+    "nextElement":"Radine morte 14"
+},
+"Radione morte 11.3":{
+    "content":    "Je croyais que tu  la d‚testais",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "100",
+    "nextElement":"Radine morte 15"
+},
+"Radine morte 13":{
+    "content":    "En plus, c'est de ta faute ! Bordel",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "100",
+    "nextElement":"Radine morte 14"
+},
+"Radine morte 14":{
+    "content":    "De toute fa‡on, on n'a pas le temps",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "100",
+    "nextElement":"Radine morte 15"
+},
+"Radine morte 15":{
+    "content":    "Ca a fait un putain de bruit",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Radine morte 16"
+},
+"Radine morte 16":{
+    "content":    "On a du r‚veiller le voisinnage",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Radine morte 17"
+},
+"Radine morte 17":{
+    "content":    "Met le contact et viens me chercher",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Radine morte 18"
+},
+"Radine morte 18":{
+    "content":    "On d‚cole !!!",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FIN"
+},
+"Radine 16":{
+    "content":    "Elle a fini? Eh ben?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 17"
+},
+"Radine 17":{
+    "content":    " Quel spectable? ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 18"
+},
+"Radine 18":{
+    "content":    "Je vais attendre qu'elle se rendorme et je sors",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"Radine 19"
+},
+"Radine 19":{
+    "content":    "C'est bon, elle ronfle? Elle s'endort vite, la vieille",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"Radine 20"
+},
+"Radine 20":{
+    "content":    "Allume le moteur, j'arrive, on est riches, mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 21"
+},
+"Radine 21":{
+    "content":    "Nice ! J'arrive. Je vais enfin pouvoir me refaire et me tirer de ce bled",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F624":"FIN",
+        "1F60E":"FIN",
+        "1F601":"FIN"
+    }
+},
+"FM Int‚rieur 13":{
+    "content":    "Bon? Je monte … l'‚tage",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 14"
+},
+"FM Int‚rieur 14":{
+    "content":    "Je suis dans la chambre",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 15"
+},
+"FM Int‚rieur 15":{
+    "content":    "J'ai trouv‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 16"
+},
+"FM Int‚rieur 16":{
+    "content":    "Juste l… o— tu avais dit",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 17"
+},
+"FM Int‚rieur 17":{
+    "content":    "Wow? Le pactole?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 18"
+},
+"FM Int‚rieur 18":{
+    "content":    "Y a mˆme des diamants",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Int‚rieur 19"
+},
+"FM Int‚rieur 19":{
+    "content":    "Putain",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Int‚rieur 21"
+},
+"FM Int‚rieur 21":{
+    "content":    "Putain ‡a valait bien le coup de buter un flic",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F61D":"FM Int‚rieur 22",
+        "1F911":"FM Int‚rieur 22",
+        "1F629":"FM Int‚rieur 22.1"
+    }
+},
+"FM Int‚rieur 22":{
+    "content":    "Ouais ! Trop bon le plan",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 6"
+},
+"FM Int‚rieur 22.1 ":{
+    "content":    "Arrˆte le pessimisme, mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 6"
+},
+"FM Radine 6":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 7"
+},
+"FM Radine 7":{
+    "content":    "Quoi ?! Qu'est-ce qui se passe ? La lumiŠre … l'‚tage s'est alum‚e",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F632":"FM Radine 8",
+        "1F62C":"FM Radine 8",
+        "1F631":"FM Radine 8"
+    }
+},
+"FM Radine 8":{
+    "content":    "La m‚m‚ est r‚veill‚e",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"FM Radine 9"
+},
+"FM Radine 9":{
+    "content":    "Je suis cach‚",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 10"
+},
+"FM Radine 10":{
+    "content":    "Elle va aux toilettes",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 11"
+},
+"FM Radine 11":{
+    "content":    "Fuck !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Radine 12"
+},
+"FM Radine 12":{
+    "content":    "Elle fait un de ces boucans XD",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"FM Radine 13"
+},
+"FM Radine 13":{
+    "content":    "C'est … cause du cassoulet !",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F602":"FM Radine 14",
+        "1F922":"FM Radine 14",
+        "1F606":"FM Radine 14"
+    }
+},
+"FM Radine 14":{
+    "content":    "Stop. Fuck. Tu va me faire rire",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"Radine 15"
+},
+"FM Radine 15":{
+    "content":    "Chut",
+    "discussion": "",
+    "type":       "1",
+    "choices":{ 
+        "1F92B":"FM Radine 16",
+        " ":"FM Radine 16",
+        "1F92D":"FM Radine 15.1"
+    }
+},
+"FM Radine 15.1":{
+    "content":    "Ca doit ˆtre moment le plus joyeux de cette soir‚e de merde",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F92A":"FM Radine morte 1",
+        "1F643":"FM Radine morte 1",
+        "1F4A9":"FM Radine morte 1"
+    }
+},
+"FM Radine morte 2.2":{
+    "content":    "Putain ! R‚gis ? C'‚tait quoi ce bruit ! Qu'est-ce qui se passe bordel ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F631":"FM Radine morte 3",
+        "1F627":"FM Radine morte 3",
+        "1F602":"FM Radine morte 3"
+    }
+},
+"FM Radine morte 3":{
+    "content":    "R‚gis ?",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F603":"FM Radine morte 4",
+        "1F604":"FM Radine morte 4",
+        "2753":"FM Radine morte 4"
+    }
+},
+"FM Radine morte 4":{
+    "content":    "Fuck !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"FM Radine morte 5"
+},
+"FM Radine morte 5":{
+    "content":    "Je crois qu'elle est morte",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"FM Radine morte 6"
+},
+"FM Radine morte 6":{
+    "content":    "Tu m'as fait rire",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "3000",
+    "nextElement":"FM Radine morte 7"
+},
+"FM Radine morte 7":{
+    "content":    "Elle a eu peur? Et puis",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"FM Radine morte 8"
+},
+"FM Radine morte 8":{
+    "content":    "Elle est tomb‚e dans les escaliers",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"FM Radine morte 9"
+},
+"FM Radine morte 9":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"FM Radine morte 10"
+},
+"FM Radine morte 10":{
+    "content":    "Quelle conne !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"FM Radine morte 11"
+},
+"FM Radine morte 11":{
+    "content":    "Putain ! Tu d‚connes ? Tu te fous de ma gueule ? T'es pas bien, mec",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F628":"FM Radine morte 11.1",
+        "1F92A":"FM Radine morte 11.2",
+        "":"FM Radine morte 11.3"
+    }
+},
+"FM Radine morte 11.1":{
+    "content":    "C'est pas une blague, mex",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 13"
+},
+"FM Radine morte 11.2":{
+    "content":    "Non  ! Je suis s‚rieux bordel connard",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 13"
+},
+"FM Radine morte 11.3":{
+    "content":    "Je croyais que tu  la d‚testais",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 13"
+},
+"FM Radine morte 13":{
+    "content":    "En plus, c'est de ta faute ! Bordel",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 13.5"
+},
+"FM Radine morte 13.5":{
+    "content":    "Ouais mais c'est pas une raison bordel ! D'abord le flic et maintenant ‡a ! ",
+    "discussion": "",
+    "type":       "1",
+    "choices":{ 
+        "1F62D":"FM Radine morte 14",
+        "1F621":"FM Trahison 1",
+        "1F922":"FM Radine morte 14"
+    }
+},
+"FM Trahison 1":{
+    "content":    "Je sais que tu stresses mais faut que tu reste avec moi, mec",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Trahison 2"
+},
+"FM Trahison 2":{
+    "content":    "Tu ferais mieux de m'‚couter",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Trahison 3"
+},
+"FM Trahison 3":{
+    "content":    "Sinon je suis dans la merde",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Trahison 4"
+},
+"FM Trahison 4":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 5"
+},
+"FM Trahison 5":{
+    "content":    "K‚vin !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 6"
+},
+"FM Trahison 6":{
+    "content":    "O— tu vas, mec ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 8"
+},
+"FM Trahison 8":{
+    "content":    "K‚vin !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 9"
+},
+"FM Trahison 9":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 10"
+},
+"FM Trahison 10":{
+    "content":    "Reviens !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 11"
+},
+"FM Trahison 11":{
+    "content":    "Enfoir‚ !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 12"
+},
+"FM Trahison 12":{
+    "content":    "Connard !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 13"
+},
+"FM Trahison 13":{
+    "content":    "Je te retrouverai",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 14"
+},
+"FM Trahison 14":{
+    "content":    "Et je te tuerai connard",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 15"
+},
+"FM Trahison 15":{
+    "content":    "Je tuerai ta mŠre aussi",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FM Trahison 16"
+},
+"FM Trahison 16":{
+    "content":    "Reviens !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "800",
+    "nextElement":"FM Trahison 17"
+},
+"FM Trahison 17":{
+    "content":    "Kevin?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "2000",
+    "nextElement":"FIN"
+},
+"FM Radine morte 14":{
+    "content":    "On n'a pas le temps pour ‡a",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 15"
+},
+"FM Radine morte 15":{
+    "content":    "Ca a fait un putain de bruit",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 16"
+},
+"FM Radine morte 16":{
+    "content":    "On a du r‚veiller le voisinnage",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 17"
+},
+"FM Radine morte 17":{
+    "content":    "Met le contact et viens me chercher",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine morte 18"
+},
+"FM Radine morte 18":{
+    "content":    "On d‚colle",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FIN"
+},
+"FM Radine 16":{
+    "content":    "Elle a fini? Eh ben?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 17"
+},
+"FM Radine 17":{
+    "content":    " Quel spectable? ",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 18"
+},
+"FM Radine 18":{
+    "content":    "Je vais attendre qu'elle se rendorme et je sors",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"FM Radine 19"
+},
+"FM Radine 19":{
+    "content":    "Putain? Elle arrˆte pas de se retourner?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"FM Radine 19.1"
+},
+"FM Radine 19.1":{
+    "content":    "Elle est insomniaque ou quoi",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "5000",
+    "nextElement":"FM Radine 19.2"
+},
+"FM Radine 19.2":{
+    "content":    "Dis? Tu comptes faire quoi avec l'argent ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 19.3"
+},
+"FM Radine 19.3":{
+    "content":    "Moi je voudrais aller me cacher au Br‚sil ou en Argentine",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "",
+    "nextElement":"FM Radine 20"
+},
+"FM Radine 20":{
+    "content":    "R‚gis? Y a du bruit dans le coffre? ‡a gr‚sille",
+    "discussion": "Voleur",
+    "type":       "1",
+    "choices":{ 
+        "1F631":"Prison 1",
+        "1F630":"Prison 1",
+        " ":"Prison 1"
+    }
+},
+"Prison 1":{
+    "content":    "Putain?. €a doit ˆtre la radio du flic.",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1300",
+    "nextElement":"Prison 2"
+},
+"Prison 2":{
+    "content":    "Comment j'ai pu oublier ‡a",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1100",
+    "nextElement":"Prison 3"
+},
+"Prison 3":{
+    "content":    "Tanpis pour la vieille, je descends",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "1000",
+    "nextElement":"Prison 4"
+},
+"Prison 4":{
+    "content":    "Viens me chercher, j'arrive",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "900",
+    "nextElement":"Prison 5"
+},
+"Prison 5":{
+    "content":    "Mec ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Prison 6"
+},
+"Prison 6":{
+    "content":    "R‚ponds !",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Prison 7"
+},
+"Prison 7":{
+    "content":    "Y a des flics de partout bordel",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Prison 8"
+},
+"Prison 8":{
+    "content":    "Dis moi que tu as r‚ussi … te barrer",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "700",
+    "nextElement":"Prison 9"
+},
+"Prison 9":{
+    "content":    "Fuck t'es o— ?",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Prison 10"
+},
+"Prison 10":{
+    "content":    "Fuck",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Prison 11"
+},
+"Prison 11":{
+    "content":    "C'est la fin",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"Prison 12"
+},
+"Prison 12":{
+    "content":    "On est foutus",
+    "discussion": "Voleur",
+    "type":       "0",
+    "delay":      "500",
+    "nextElement":"FIN"
+}

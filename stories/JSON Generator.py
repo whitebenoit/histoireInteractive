@@ -7,7 +7,7 @@ def get_last(a):
     if e is not "":
       return len(a) - i - 1
   return -1
-name = "Girls CSV 3"
+name = "Voleurs V5"
 file= open(name+".json","w+")
 
 

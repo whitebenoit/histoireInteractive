@@ -29,16 +29,19 @@ CV-11,"En clair, vous m'envoyez à la mine",CORP,1,,,1f4a9,JL-17,2620,JL-17,1f385
 JL-17,"C'est une nouvelle aventure pour une grande partie de la crew prod, that's it ?",CORP,0,3000,JL-18,,,,,,
 JL-18,Mais nous serons vigilents à valoriser les bons éléments,CORP,0,2000,CV-12,,,,,,
 CV-12,Ok,CORP,1,,,263a,JL-19,1f927,JL-20,1F60E,JL-19
-JL-19,Cette task peut être un tremplin pour ton team,CORP,0,,JL-21,,,,,,
+JL-19,Cette task peut être un tremplin pour ta team,CORP,0,,JL-21,,,,,,
 JL-20,"Ca va laguer un peu, mais on est en search de nouveaux talents au service 4A",CORP,0,,JL-21,,,,,,
-JL-21,"Et franchement, stop now avec tes icones de weirdo",CORP,0,,CV-12,,,,,,
+JL-21,"Et franchement, stop now avec tes icones de weirdo",CORP,0,,CV-13,,,,,,
 CV-13,Ok,CORP,1,,,1f609,JL-22,,,,
 JL-22,"Putain, tu arrêtes ça now !",CORP,0,,JL-23,,,,,,
 JL-23,Y'a aussi des postes à pourvoir dans notre filiale de cayenne,CORP,0,3000,JL-24,,,,,,
-JL-24,Check le mediaflow...,CORP,0,6000,CV-13,,,,,,
+JL-24,Check le mediaflow...,CORP,0,6000,CV-14,,,,,,
 CV-14,comment ça !???,CORP,1,,,1f628,JL-25,1f621,JL-25,1f922,JL-25
-JL-25,Elle le mérite bien,CORP,0,,CV-14,,,,,,
+JL-25,Elle le mérite bien,CORP,0,4000,CV-15,,,,,,
 CV-15,Mais elle pars en congé mater dans 3 mois !,CORP,1,,,1f92e,JL-26,1f616,JL-26,1f476,JL-27
 JL-26,Elle a les compétences,CORP,0,2000,JL-27,,,,,,
 JL-27,Personne n'est pas irremplaçable,CORP,0,4000,JL-28,,,,,,
 JL-28,0148257542 : service des plans de retraite aménagé,CORP,0,5000,,,,,,,
+SEC-01,Report du meeting de demain,CORP,0,,CV-01,,,,,,
+CV-01,"Cher JL, à quand voulez vous reporter le meeting ?",CORP,1,,,1f643,JL-01,1f603,JL-01,1F60E,JL-01
+JL-01,Check le mediaflow,CORP,0,3500,CV-02,,,,,,
